@@ -43,7 +43,7 @@ function AddInnerHtml(element, ifnone){
 function Initialize_Head(){
     document.title = "YuGiOh Database";
     document.head.appendChild(CreateFavicon());
-    document.head.appendChild(CreateCssLink("../../livre_noir.css"));
+    document.head.appendChild(CreateCssLink("livre_noir.css"));
     document.head.appendChild(CreateCssLink("style.css"));
 }
 

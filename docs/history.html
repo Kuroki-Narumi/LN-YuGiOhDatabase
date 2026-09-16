@@ -4,7 +4,7 @@
         <meta content="text/html" charset="UTF-8" http-equiv="content-type">
         <title>YuGiOh Database</title>
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../livre_noir.css">
+        <link rel="stylesheet" type="text/css" href="livre_noir.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -12,6 +12,89 @@
             <ul>
                 <li>
                     <details open>
+                        <summary class="a-like">Version 2.0.0 (2026/09/16)</summary>
+                        <ul>
+                            <li>
+                                メジャーバージョンの更新
+                                <ul>
+                                    <li>
+                                        要求ランタイムを<a href="https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0/runtime" target="_blank">.NET10</a>に変更しました。
+                                    </li>
+                                    <li>
+                                        旧バージョンとはアプリ設定を含めて<b>完全に非互換</b>です。
+                                    </li>
+                                    <li>
+                                        実行ファイルの名前を<span class="script">YuGiOh Database</span>から<span class="script">LN-YuGiOhDatabase</span>に変更しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        ありすぎて作者も把握しきれてないので気合で感じてください。
+                                    </li>
+                                    <li>
+                                        <b>重要</b>: 文字列検索全般において以下のように変更しました。 
+                                        <ul>
+                                            <li>
+                                                検索語句の複数指定では<b>スペースで区切る</b>ようにしました。(旧バージョン: <span class="script">|</span>で区切る)
+                                            </li>
+                                            <li>
+                                                検索語句を複数指定した場合、デフォルトでは**いずれか1つ以上が含まれれば**ヒットします。
+                                                <ul>
+                                                    <li>
+                                                        例: <span class="script">ブルー アイズ</span>で検索すると「レッドアイズ・ブラックドラゴン」などがヒットします。
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                語句の前に<span class="script">+</span>を付けると<b>必須</b>扱いになります。 
+                                                <li>
+                                                    例: <span class="script">ブルー +アイズ</span>で検索すると「ブルー」と「アイズ」を両方含むようなカードがヒットします。
+                                                </li>
+                                                <li>
+                                                    例: <span class="script">ブルー レッド +アイズ</span>で検索すると「ブルーアイズ」や「レッドアイズ」のようなカードがヒットします。
+                                                </li>
+                                            </li>
+                                            <li>
+                                                語句の前に<span class="script">-</span>を付けると<b>除外</b>扱いになります。 
+                                                <li>
+                                                    例: <span class="script">ブルー -アイズ</span>で検索すると「ブルー」を含むが「アイズ」を含まないカードがヒットします。(例: 「ブルー／ポーション」)
+                                                </li>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html">データベース>カードリスト</a>において、<b>カード画像の設定</b>ができるようになりました。
+                                        <ul>
+                                            <li>
+                                                右上の<span class="script">CARD IMAGE</span>と書かれたボタンを押すと「ファイルを開く」ダイアログが表示されるので、そのカードに設定したい画像を選んでください。
+                                            </li>
+                                            <li>
+                                                右クリックメニューから変更や削除ができます。
+                                            </li>
+                                            <li>
+                                                設定後はカード画像のサムネイルをクリックすると拡大表示します。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="duellog_statistics.html">デュエルログ>統計</a>において、ログの「備考」を検索できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
                         <summary class="a-like">Version 1.7.11 (2025/08/23)</summary>
                         <ul>
                             <li>
@@ -27,7 +110,7 @@
                     </details>
                 </li>
                 <li>
-                    <details open>
+                    <details>
                         <summary class="a-like">Version 1.7.10 (2025/04/22)</summary>
                         <ul>
                             <li>
