@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../livre_noir.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <ul>
+                <li>
+                    <details open>
+                        <summary class="a-like">Version 1.7.11 (2025/08/23)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html">データベース/カードリスト</a>などの「リスト更新」使用時、モンスターカードの情報を正しく読み込めなくなっていた不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary class="a-like">Version 1.7.10 (2025/04/22)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html">データベース/カードリスト</a>などの「リスト更新」使用時、モンスターカードの情報を正しく読み込めなくなっていた不具合を修正しました。
+                                    </li>
+                                    <li>
+                                        この修正に伴い、「リスト更新」の処理に以前のバージョンより時間がかかるようになっています。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary class="a-like">Version 1.7.9 (2025/03/24)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html">データベース/カードリスト</a>などの「リスト更新」使用時、モンスターカードの情報を正しく読み込めなくなっていた不具合を修正しました。
+                                        <ul>
+                                            <li>
+                                                更新には<span class="script">CardPool.json</span>の修正も含まれています。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.8 (2025/01/28)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="duellog_statistics.html">デュエルログ/統計</a>において、ランクの絞り込みの一覧を修正しました。
+                                        <ul>
+                                            <li>
+                                                Version 1.7.7 で追加された特殊ランクが反映されていなかったため修正しました。
+                                            </li>
+                                            <li>
+                                                プラチナ帯のヘッダーが誤って「Silver」と表記されていたため修正しました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.7 (2024/12/30)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="duellog_log.html">デュエルログ/ログ管理</a>において、「ランク」の選択肢に「Rate」及び「O1-O4」を追加しました。
+                                        <ul>
+                                            <li>
+                                                「Rate」はマスター1の通常の対戦とレート戦を区別したい場合にご利用ください。
+                                            </li>
+                                            <li>
+                                                「O1」「O2」「O3」「O4」は特定の意味を持たない汎用ランク指定です。
+                                                <ul>
+                                                    <li>
+                                                        近い期間で異なるフェスや大会が開催された際、「Room」や「Fes」を指定するとその両者が混同されるため、それらを区別する目的を想定しています。
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        カード名のテキスト検索において、正規表現を使用<b>しない</b>場合に、<b>全角</b>の<span class="script">｜</span>も半角の<span class="script">|</span>と同じ扱いにしました。
+                                        <ul>
+                                            <li>
+                                                通常の検索ではひらがなを入力することが多いと想定し、変換の手間が省くための追加です。
+                                            </li>
+                                            <li>
+                                                詳細は Version 1.7.6 の更新履歴を見てください。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_inspect_setting.html">デッキ/手札検証:条件設定</a>の「デッキ」及び「手札」において、右クリックやドラッグ&ドロップによる項目の編集ができなくなっていた不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.6 (2024/11/30)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        カード名のテキスト検索において、正規表現を使用<b>しない</b>場合に、半角の<span class="script">|</span>で区切ることで<b>OR検索</b>ができるようにしました。
+                                        <ul>
+                                            <li>
+                                                正規表現を使用しない場合、カード名はひらがな/カタカナを区別せずに検索可能です。
+                                            </li>
+                                            <li>
+                                                例えば<span class="script">てんぱい|さんげん</span>と検索することで、「天盃龍」カードと「燦幻」カードの両方を一度に検索できます(《覚醒の三幻魔》など無関係のカードもヒットします)。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        ソート<img src="img/button_sort.png"/>及び絞り込み<img src="img/button_search.png"/>ボタンが存在するカードリストにおいて、任意のプリセットをデフォルトに指定できるようにしました。
+                                        <ul>
+                                            <li>
+                                                <b>デフォルト指定ボタン<img src="img/button_import.png"></b>をクリックすることで、そのプリセットを<b>デフォルトプリセット</b>扱いにします。
+                                            </li>
+                                            <li>
+                                                <span class="script">Alt</span>キーを押しながら<b>デフォルト指定ボタン</b>をクリックすると、デフォルト指定を<b>解除</b>します。
+                                            </li>
+                                            <li>
+                                                デフォルトプリセットの指定は<b>次回以降のアプリ起動時</b>に反映されます。
+                                            </li>
+                                            <li>
+                                                デフォルトに指定されたプリセットは<b>以下のリストに対して</b>適用されます。
+                                                <ul>
+                                                    <li>
+                                                        <a href="database_cards.html">データベース/カードリスト</a>のカードリスト
+                                                    </li>
+                                                    <li>
+                                                        <a href="database_cards.html">データベース/カードリスト</a>において個別に開いたウィンドウのカードリスト
+                                                    </li>
+                                                    <li>
+                                                        <a href="database_regulation.html">データベース/レギュレーション</a>のカードリスト
+                                                    </li>
+                                                    <li>
+                                                        上記以外のカードリストにおいては、デフォルトプリセットは適用されません(要望があれば変更するかもしれません)。
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        ソートボタン<img src="img/button_sort.png"/>が存在するカードリストにおいて、「初期ソート」の設定を削除しました。
+                                        <ul>
+                                            <li>
+                                                「初期ソート」の指定は無効になるため、利用していた場合は、上記「デフォルトプリセット」を改めて指定してください。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="database_regulation.html">データベース/レギュレーション</a>において、メインカードリストに対する<b>ソート</b>の指定を、右側の指定カードリストにも反映するようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.5 (2024/11/14)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、「エクスポート」でコピーされるJavaScriptの内容を、公式データベースの仕様変更に対応しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.4 (2024/11/02)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="duellog_log.html">デュエルログ/ログ管理</a>において、右上に「全てクリア」ボタンを追加しました。
+                                        <ul>
+                                            <li>
+                                                「相手」「手番」「ターン」「結果」「備考」及び「初期手札」「追加手札」の内容が初期化されます。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.3 (2024/09/07)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        ソートボタン<img src="img/button_sort.png"/>が存在するカードリストにおいて、1個目のプリセットを「初期ソート」に設定できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details >
+                        <summary class="a-like">Version 1.7.2 (2024/08/31)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html">データベース/カードリスト</a>を独立したウィンドウで表示する際、タスクバーに表示できるようにしました。
+                                    </li>
+                                    <li>
+                                        各リストビューにおいて、偶数行目の背景色を変更しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.1 (2024/07/24)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        メインウィンドウの右上に<a href="https://www.db.yugioh-card.com/yugiohdb/" target="_blank">公式データベース</a>へのリンクを追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="database_cards.html">データベース/カードリスト</a>を独立したウィンドウで表示できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.7.0 (2024/04/29)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="statistics_numbers.html">「統計/エヴァイユ」</a>を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="deck_small_search.html">デッキ/スモワ:検索</a>の対象リストにおいて、以下のように変更しました。
+                                        <ul>
+                                            <li>
+                                                チェックされた項目の背景色が変わるようにしました。
+                                            </li>
+                                            <li>
+                                                マウスの<b>ドラッグ</b>によってチェック状態を連続で変更できるようにしました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.6.3 (2024/04/25)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="general_sort.html">ソートウィンドウ</a>において、ソート基準に「読み」「TCG名」を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="database_original.html">データベース/オリカ</a>において、新規カードを作成する際、名前にランダムな文字列を付加するように変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="duellog_tag.html">デュエルログ/タグ管理</a>において、新しくタグを作成する際、「検索用文字列」に自動で文字が入らないようにしました。
+                                        <ul>
+                                            <li>
+                                                旧バージョンでは「検索用文字列」が空の状態でタグを追加すると、「名前」のカタカナをひらがなに変換したものを自動で入力していました。
+                                            </li>
+                                            <li>
+                                                タグの検索では日本語を使用できなくしたため、この機能は無意味となっていました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="database_original.html">データベース/オリカ</a>において、新規作成したカードの編集内容を「反映」しようとした際にエラーが発生する不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.6.2 (2024/04/21)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="statistics_trapmonster.html">統計/罠モンスター</a>において、テキストの古い一部カードが検索できていなかったため修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.6.1 (2024/04/20)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        いくつかのアイコンを変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="general_search.html">検索ウィンドウ</a>などの日付選択において、カレンダーを表示している間はマウスホイールで日付を変更できないようにしました。
+                                    </li>
+                                    <li>
+                                        <a href="tab_duellog.html">デュエルログ</a>タブにおける日時選択において以下のように変更しました。
+                                        <ul>
+                                            <li>
+                                                日付(年、月、日)の選択方法をカレンダー形式に変更しました。
+                                                <ul>
+                                                    <li>
+                                                        年月日は一つのボックスにまとめられ、<b>マウスホイール</b>による変更は<b>「日」単位</b>に固定されました。
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                時分のドロップダウンメニューの表示方法を、スクロール形式から縦横に並べた一覧形式に変更しました。
+                                            </li>
+                                            <li>
+                                                現在時刻を入力するボタンを、「Now」と書かれたボタンからアイコン<img width="18" src="img/icon_clock.png"/>に変更しました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="duellog_statistics.html">デュエルログ/統計</a>において、「%」の列ヘッダーをクリックした際のソート挙動を変更しました。
+                                        <ul>
+                                            <li>
+                                                変更前: 左隣の列ヘッダーと同じ(例:「勝」の右側の「%」ヘッダーをクリックした場合、「勝」の数で並べ替える)
+                                            </li>
+                                            <li>
+                                                変更後: 「%」列の値で並べ替え(例:「勝」の右側の「%」ヘッダーをクリックした場合、勝率で並べ替える)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_cardlist.html">デッキ/カードリスト</a>において、カードリストがウィンドウからはみ出しているとその部分が「画像として保存」の際に切り捨てられる不具合を修正しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_inspect_setting.html">デッキ/手札検証:条件設定</a>において、サブリストから別のサブリストや余白へカードをドラッグした際、カードが移動せず削除される不具合などを修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.6.0 (2024/04/15)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        メインタブに<a href="tab_duellog.html">「デュエルログ」</a>を追加しました。
+                                        <ul>
+                                            <li>
+                                                <a href="duellog_log.html">「デュエルログ/ログ管理」</a>を追加しました。
+                                            </li>
+                                            <li>
+                                                <a href="duellog_tag.html">「デュエルログ/タグ管理」</a>を追加しました。
+                                            </li>
+                                            <li>
+                                                <a href="duellog_statistics.html">「デュエルログ/統計」</a>を追加しました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <b>アプリ設定</b>について、以下の項目を独立したファイルとして保存するように変更しました。
+                                        <ul>
+                                            <li>
+                                                <a href="database_regulation.html">レギュレーション</a>
+                                            </li>
+                                            <li>
+                                                <a href="database_original.html">オリジナルカード</a>
+                                            </li>
+                                            <li>
+                                                <a href="deck_edit.html">デッキ</a>
+                                            </li>
+                                            <li>
+                                                <a href="deck_inspect_setting.html">手札検証条件</a>
+                                            </li>
+                                            <li>
+                                                各ファイルの内容は、それぞれのタブで<img src="img/button_save.png"/>を押して保存した際の<span class="script">.json</span>ファイルと同等です。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        メインタブの<a href="tab_deck.html">「デッキ」</a>と<a href="tab_statistics.html">「統計」</a>の位置を入れ替えました。
+                                    </li>
+                                    <li>
+                                        <a href="database_regulation.html">データベース/レギュレーション</a>などのエディットバーにおいて、「全ての項目を削除するボタン」のアイコンを<img src="img/button_clear.png"/>から<img src="img/button_new.png"/>に変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="database_regulation.html">データベース/レギュレーション</a>において、エディットバーと更新ボタンの位置を変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_inspect_setting.html">デッキ/手札検証:条件設定</a>などの項目操作を行う画面において、操作ボタン(<img src="img/button_add.png"/><img src="img/button_clear.png"/>など)の位置を変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_inspect_setting.html">デッキ/手札検証:条件設定</a>において、<img src="img/button_left.png"/><b>ボタンを押さなければ項目の編集内容が反映されない</b>ように変更しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.6 (2024/04/08)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        エラーが発生した際、エラーメッセージを表示するようにしました。
+                                        <ul>
+                                            <li>
+                                                アプリがあるフォルダに<span class="script">ErrorLogs</span>フォルダを生成し、そこにログを記録するため、不具合報告の際にご利用いただければ幸いです。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="database_regulation.html">データベース/レギュレーション</a>において、レギュレーションを変更しようとするとアプリが落ちる不具合を<b>恐らく</b>修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.5 (2024/04/06)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html#info">カード情報欄</a>において、「収録シリーズ」リストの項目数を表示するようにしました。
+                                    </li>
+                                    <li>
+                                        <a href="general_sort.html">ソートウィンドウ</a>において、ソート条件に「収録シリーズ」の数を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="general_search.html">検索ウィンドウ</a>などにある範囲指定用のスライダーにおいて、テキストボックスに直接値を入力する際に、テキスト入力を確定するまでは内容の検証を行わないようにしました。
+                                        <ul>
+                                            <li>
+                                                旧仕様では例えば、テキストボックスに<span class="script">1500</span>と入力されている状態で"5"と"0"の間に"1"を入力<b>しようとした時点</b>で、<span class="script">15100</span>を入力したと見なされて値が<span class="script">5000</span>に矯正されていました。
+                                            </li>
+                                            <li>
+                                                変更後は、このケースではテキストボックスの内容は<span class="script">15100</span>のままであり、<span class="script">Enter</span>を押すなどして<b>テキスト入力を確定した時点</b>で値が<span class="script">5000</span>に矯正されます。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="deck_cardlist.html">デッキ/カード編集</a>などにあるスライダーの一部について、テキストボックスで数値を直接指定できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.4 (2024/03/28)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="general_search.html">テキスト検索</a>において、「大文字/小文字を区別」と「正規表現を使用」のチェックが内部的に逆になっていた不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.3 (2024/03/17)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>などにおいて、カードリストの並び順が変わっていた不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.2 (2024/03/16)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、非公開状態となっている「マイデッキ」の内容を読み込む機能を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.1 (2024/03/15)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="general_sort.html">ソートウィンドウ</a>と<a href="general_search.html">検索ウィンドウ</a>において、条件指定のプリセット機能を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="general_sort.html">ソートウィンドウ</a>でのソート設定において、ソート1に「種類」、ソート2以降に「レベル/ランク/リンク」を指定するとソート2を「降順」にしてもレベルが降順にならない不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        自動アップデートの挙動を変更しました。
+                                        <ul>
+                                            <li>
+                                                旧方式ではアプリフォルダ内に存在するアップデータ(<span class=script>updater.exe</span>)を起動しており、アップデータ自身を更新することができませんでした。
+                                            </li>
+                                            <li>
+                                                新方式ではアップデートの際に<b>毎回新しいアップデータをダウンロード</b>するようにしました。
+                                            </li>
+                                            <li>
+                                                この仕様変更は次回以降のアップデートで反映されます。
+                                            </li>
+                                            <li>
+                                                この更新の適用後は、アプリフォルダ内の<span class=script>updater.exe</span>は<b>削除して問題ありません</b>。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.5.0 (2024/03/13)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="database_original.html">「データベース/オリカ」</a>を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        カード名をクリップボードにコピーする機能を使用する際、クリップボードへのアクセスが失敗した場合に強制終了しないようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html#info">カード情報</a>のテキストボックスに表示される文字列の改行コードを<span class="script">CRLF</span>にしました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、インポート及びエクスポートの際に開く画面の領域を、ウィンドウ全体から「デッキ編集」タブの内部に変更しました。
+                                    </li>
+                                    <li>
+                                        カードデータ(<span class=script>Resources/CardPool.json</span>)の以下の項目において、文字数削減のために、値がfalsyな場合はその項目自体を省略するようにしました。
+                                        <ul>
+                                            <li>
+                                                Card.ruby (カード名の読み)
+                                            </li>
+                                            <li>
+                                                Card.en_name (TCG英語版カード名)
+                                            </li>
+                                            <li>
+                                                Card.unusable (使用不可フラグ)
+                                            </li>
+                                            <li>
+                                                MonsterInfo.effect (効果フラグ)
+                                            </li>
+                                            <li>
+                                                MonsterInfo.ability (能力)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.4.1 (2024/03/10)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="database_cards.html#info">カード情報</a>に「関連検索」を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        OCG未発売カードのうち、『<b>遊戯王マスターデュエル</b>』で日本語版のテキストが判明しているカードのテキスト類を日本語にしました。
+                                        <ul>
+                                            <li>
+                                                <b>手作業で入力しているため、今後の追加カード全てに対応するかは未定です。</b>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="database_cards.html#info">カード情報</a>において、「収録シリーズ」のリスト領域を拡張できるようにしました。
+                                    </li>
+                                    <li>
+                                        カードリストの<a href="general_sort.html">並べ替え</a>において、「登場日順」を選んだ際、指定ロケールで発売されていないカードは昇順でも降順でも最後に表示されるように変更しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.4.0 (2024/03/04)</summary>
+                        <ul>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        「統計/魂の造形家」を<b>廃止</b>し、代わりに<a href="statistics_match.html">「統計/ステータスマッチング」</a>を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_table.html">統計/テーブルビュー</a>において、セルをクリックして内容リストを表示する際の挙動を以下のように変更しました。
+                                        <ul>
+                                            <li>
+                                                変更前 : ボタンを押した時に表示
+                                            </li>
+                                            <li>
+                                                変更後 : ボタンを<b>押して離した</b>時に表示
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.3.1 (2024/02/26)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、「インポート」を押しても何も起きない不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="statistics_hedgehog.html">統計/ヘッジホッグ</a>において、ステータスリストに該当するモンスターの数を表す列を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.3.0 (2024/02/26)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="general_sort.html">ソートウィンドウ</a>において、ソート基準に「発売日」を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="database_regulation.html">データベース/レギュレーション</a>において、リミット「特別指定」を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、デッキ内容を公式データベースの「マイデッキ」に反映できるエクスポート機能を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>などの<span class="script">.json</span>ファイルを入出力可能なタブにおいて、外部から<span class="script">.json</span>ファイルをドラッグ&ドロップすることでその内容を開けるようにしました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_table.html">統計/テーブルビュー</a>において、以下の機能を追加しました。
+                                        <ul>
+                                            <li>
+                                                セルの内容のアラインメント(揃え方向)を変更できるようにしました。
+                                            </li>
+                                            <li>
+                                                該当カードが無いセルに表示されていた<span class="script">-</span>を、別の文字列に変更できるようにしました。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="statistics_token.html">「統計/トークン」</a>を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_trapmonster.html">「統計/罠モンスター」</a>を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        エクスポート機能追加に伴い、<b>全てのカード名を公式データベースと厳密に一致するように変更</b>しました。
+                                        <ul>
+                                            <li>
+                                                一例として、カード名に含まれる数字(《バーバリアン１号》など)が全角になりました。
+                                            </li>
+                                            <li>
+                                                デッキなどの入出力や検索への影響は基本的にありません。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="general_search.html">検索ウィンドウ</a>において、「その他」タブの内容を変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、<b>一度に101枚以上のカードを追加/削除できなくしました</b>。
+                                    </li>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>などのグリッドビューリストにおいて、数値の列の内容を右揃えにしました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_table.html">統計/テーブルビュー</a>において「テキストとしてコピー」の際、該当カードが無いセルの表示を<span class="script">0</span>から「ゼロ」で指定された文字列に変更しました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_hedgehog.html">統計/ヘッジホッグ</a>において、カードリストに各カードの攻撃力なども表示するようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.2.1 (2024/02/23)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_inspect_exam.html">デッキ/手札検証:実行</a>において、<b>検証対象にEXデッキを含めてしまっていた</b>不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.2.0 (2024/02/22)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="deck_edit.html">デッキ/デッキ編集</a>において、公式データベースからデッキを読み込む機能を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_hedgehog.html">「統計/ヘッジホッグ」</a>を追加しました。
+                                    </li>
+                                    <li>
+                                        「統計/魂の造形家」を追加しました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.1.0 (2024/02/21)</summary>
+                        <ul>
+                            <li>
+                                機能追加
+                                <ul>
+                                    <li>
+                                        <a href="deck_cardlist.html">デッキ/カードリスト</a>において、カードリストをテキストとしてクリップボードに送る機能を追加しました。
+                                    </li>
+                                    <li>
+                                        <a href="deck_small_deck.html">デッキ/スモワ:デッキ内</a>において、辺の文字サイズを個別に指定できるようにしました。
+                                    </li>
+                                    <li>
+                                        <a href="statistics_table.html">統計/テーブルビュー</a>において、セル内容を%で表示する際、その小数点以下の桁数を指定できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        アップデートを適用した際、直後の起動時にその旨を表示するようにしました。
+                                    </li>
+                                    <li>
+                                        メインウィンドウにおいて、右上にあった「オンラインマニュアル」と「アプリの更新」ボタンを「ヘルプボタン」に統合し、それをクリックした際に現在のアプリバージョンも確認できるようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.0.1 (2024/02/19)</summary>
+                        <ul>
+                            <li>
+                                不具合修正
+                                <ul>
+                                    <li>
+                                        <a href="deck_cardlist.html">デッキ/カードリスト</a>での名前欄の編集において、「一度でも改行を指定すると改行の指定を解除できなくなる」不具合を修正しました。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                仕様変更
+                                <ul>
+                                    <li>
+                                        <a href="deck_cardlist.html">デッキ/カードリスト</a>での名前欄の編集において、改行(<span class="script">Enter</span>)以外のテキスト編集を受け付けないようにしました。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="a-like">Version 1.0.0 (2024/02/17)</summary>
+                        <ul>
+                            <li>
+                                公開
+                            </li>
+                        </ul>
+                        <br>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

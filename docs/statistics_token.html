@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../livre_noir.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>「トークン」タブ</h1>
+                <p>
+                    <b>モンスタートークン</b>を調べるためのタブです。
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                <div class="grid_9">
+                    <img src="img/statistics_token.png" class="sticky header" style="max-height: 150px;"/>
+                    <div style="grid-area: content;">
+                        <ol>
+                            <li>
+                                リスト生成
+                                <ul>
+                                    <li>
+                                        <b>このタブは初期状態では何も表示されていません。</b>
+                                    </li>
+                                    <li>
+                                        「リスト生成」ボタンを押すと、データベースに存在するカード全てのテキストを調べ、トークンの一覧を生成します。
+                                    </li>
+                                    <li>
+                                        正規表現によってカードテキストから機械的にトークンの情報を読み取るため、誤って解釈された情報が存在する可能性があります。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                サーチバー
+                                <ul>
+                                    <li>
+                                        テキストボックスに入力して<span class="script">Enter</span>を押すとテキスト検索を適用します。
+                                        <ul>
+                                            <li>
+                                                <b>トークン名</b>と<b>参考テキスト</b>の内容から検索します。
+                                            </li>
+                                            <li>
+                                                公式データベースではカードテキストにはルビ(読みがな)が振られないため、<b>トークン名の「読み」による検索はできません。</b>ご注意ください。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <img src="img/button_clear.png"/>: 絞り込みを解除します。
+                                    </li>
+                                    <li>
+                                        サーチバーの右端には、現在そのリストに表示されている項目の数が表示されます。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                トークンリスト
+                                <ul>
+                                    <li>
+                                        名前のついたトークンが一覧されます。
+                                    </li>
+                                    <li>
+                                        項目を選ぶと右のリストにその内容が表示されます(後述)。
+                                    </li>
+                                    <li>
+                                        <span class="script">Shift</span><b>キーを押しながら項目をクリック</b>すると、<b>山括弧《》で囲ったカード名</b>がクリップボードにコピーされます。
+                                    </li>
+                                    <li>
+                                        <b>チューナー</b>にはチューナーアイコン<img src="img/icon_tuner.png" width="24"/>が表示されます。
+                                    </li>
+                                    <li>
+                                        「参考テキスト」の<span class="script">...</span>にマウスカーソルを乗せると、そのトークンを生成するカードのうち<b>最もIDが若いカード</b>のテキストが表示されます。
+                                    </li>
+                                    <li>
+                                        ヘッダー(<b>「名前」などが書かれている部分</b>)をクリックすると、それを基準として項目をソート(並べ替え)します。
+                                        <ul>
+                                            <li>
+                                                ソートを解除(初期の並び順にソート)したい場合は「<b>参考テキスト</b>」のヘッダーをクリックしてください。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                カードリスト1
+                            </li>
+                            <li>
+                                カードリスト2
+                                <ul>
+                                    <li>
+                                        カード名のリンクをクリックすると、そのカードの<a href="database_cards.html#info">カード情報</a>を別ウィンドウとして開きます。
+                                    </li>
+                                    <li>
+                                        <span class="script">Shift</span><b>キーを押しながら項目をクリック</b>すると、<b>山括弧《》で囲ったカード名</b>がクリップボードにコピーされます。
+                                    </li>
+                                    <li>
+                                        「リスト生成」を行った直後には、各リストには以下のカードが一覧されます。
+                                        <ol start="4">
+                                            <li>
+                                                「参照」: 名前を指定せずトークンを参照するカード(以下具体例)
+                                                <ul>
+                                                    <li>
+                                                        〈トークン*祭〉(トークンを破壊したりリリースしたりする効果)
+                                                    </li>
+                                                    <li>
+                                                        〈幻獣機〉モンスター (自分フィールドにトークンが存在する限り自身は破壊されない)
+                                                    </li>
+                                                    <li>
+                                                        《白闘気双頭神龍》(自分フィールドに<b>トークンが無い場合</b>を効果の条件とする)
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                「除外」: 召喚条件や効果対象などに「トークン以外」または「トークンを除く」と書かれているカード(以下具体例)
+                                                <ul>
+                                                    <li>
+                                                        〈魔鍵〉カード (トークン以外の通常モンスターを指定する)
+                                                    </li>
+                                                    <li>
+                                                        一部リンクモンスター (トークン以外をリンク素材に要求する)
+                                                    </li>
+                                                    <li>
+                                                        《エスケープ・ゴート》(トークン以外をリリースしてトークンを生成する)
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        サーチバー右の「汎用」ボタンを押すと、これらリストの内容は上記の状態に戻ります。
+                                    </li>
+                                    <li>
+                                        トークンリストからトークンを選ぶと、これらリストの内容は以下のように変化します。<br>
+                                        <img src="img/statistics_token_2.png" style="height: 150px"/>
+                                        <ol>
+                                            <li>
+                                                「生成」: そのトークンを特殊召喚する効果を持つカード
+                                            </li>
+                                            <li>
+                                                「参照」: そのトークンを<b>特殊召喚する以外の目的で</b>指定する効果を持つカード
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

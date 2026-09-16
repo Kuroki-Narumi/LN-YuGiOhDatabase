@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../livre_noir.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>「手札検証:実行」タブ</h1>
+                <p>
+                    現在の<a href="deck_edit.html">デッキ</a>における<b>初手5枚の手札内容</b>を検証する機能を実行するためのタブです。<br>
+                    このタブで設定した内容は<b>アプリ設定に記憶され、次回以降の起動時に復元されます。</b>
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                <div class="common" src="common/inspect_common.html"></div>
+                <div class="grid_9">
+                    <img src="img/deck_inspect_exam.png" class="sticky header" style="max-height: 300px;"/>
+                    <div style="grid-area: content;">
+                        <ol>
+                            <li>
+                                試行回数
+                                <ul>
+                                    <li>
+                                        <b>手札の引き直し</b>を行う回数を指定します。
+                                    </li>
+                                    <li>
+                                        <b>マウスホイール</b>を回すと<b>1000</b>ずつ変更できます。
+                                    </li>
+                                    <li>
+                                        初期値は<b>10万</b>となっていますが、擬似乱数の偏りの影響を軽減するため<b>100万以上</b>にしておくことを推奨します。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                手札枚数
+                                <ul>
+                                    <li>
+                                        検証する手札の枚数を指定します。
+                                    </li>
+                                    <li>
+                                        <b>マウスホイール</b>を回すと<b>1</b>ずつ変更できます。
+                                    </li>
+                                    <li>
+                                        <b>先攻1ターン目なら 5、後攻1ターン目なら 6 </b>にします。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                ドローソース優先度
+                                <ul>
+                                    <li>
+                                        いわゆる〈<b>壺</b>〉カードを含む、いくつかのドローソースの使用優先度を指定します。
+                                    </li>
+                                    <li>
+                                        項目をクリックし<img src="img/button_up.png"/><img src="img/button_down.png"/>を押すことで優先度を変更できます。
+                                    </li>
+                                    <li>
+                                        「その他」には、無条件にドローを行うことができる以下のカードが含まれます。
+                                        <ul>
+                                            <li>
+                                                《強欲な壺》
+                                            </li>
+                                            <li>
+                                                《成金ゴブリン》
+                                            </li>
+                                            <li>
+                                                《チキンレース》
+                                            </li>
+                                            <li>
+                                                《無の煉獄》
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        当然ながら、ここでの優先度の指定に関わらず<b><a href="deck_edit.html">デッキ</a>に採用されていないドローソースは使われません</b>。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                検証開始ボタン
+                                <ul>
+                                    <li>
+                                        手札検証を開始します。詳細は下記<a href="#detail">手札検証の詳細</a>を参照してください。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                結果:概要
+                                <ul>
+                                    <li>
+                                        検証結果の概要が表示されます。詳細は下記<a href="#detail">手札検証の詳細</a>を参照してください。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                結果:条件別
+                                <ul>
+                                    <li>
+                                        <a href="deck_inspect_setting.html">「手札検証:条件設定」タブ</a>で設定された条件項目ごとに、それが適合した回数と、全検証に対するその割合(確率)を一覧で表示します。
+                                    </li>
+                                    <li>
+                                        <span class="script">Ctrl</span>キーを押しながら項目をクリックすると<b>複数選択</b>を行います。
+                                    </li>
+                                    <li>
+                                        <span class="script">Shift</span>キーを押しながら項目をクリックすると<b>範囲選択</b>を行います。
+                                    </li>
+                                    <li>
+                                        項目を<b>1つ以上</b>選択すると、リストの右下に「確率」の総計が表示されます。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                割合総計
+                                <ul>
+                                    <li>
+                                        「結果:条件別」リストで選択されている項目の「確率」をまとめたものが表示されます。
+                                    </li>
+                                    <li>
+                                        <b>同じグループ</b>の「確率」は<b>全て加算</b>されます。
+                                        <ul>
+                                            <li>
+                                                すなわち、「全検証のうち、選択されている条件の<b>いずれか1つ</b>が適合した割合」を示します。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>異なるグループ</b>の「確率」は<b>全て乗算</b>されます。
+                                        <ul>
+                                            <li>
+                                                すなわち、「全検証のうち、選択されている条件が<b>全て適合</b>した割合」を示します。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="common" src="common/inspect_common2.html"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../livre_noir.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>「カードリスト」タブ</h1>
+                <p>
+                    <a href="deck_edit.html">デッキ</a>の内容を動画やSNSに貼り付けられる画像として表示するタブです。<br>
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                <div class="grid_9">
+                    <img src="img/deck_cardlist.png" class="sticky header"/>
+                    <div style="grid-area: content;">
+                        <ol>
+                            <li>
+                                画像として保存
+                                <ul>
+                                    <li>
+                                        下に表示されている表を<span class="script">.png</span>形式で保存します。
+                                    </li>
+                                    <li>
+                                        ボタンを押した時点で同じ画像が<b>クリップボード</b>にも送られるため、SNSの投稿画面などに直接貼り付けることもできます。(その場合保存はキャンセルしてください)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                テキストとしてコピー
+                                <ul>
+                                    <li>
+                                        カードリストをシンプルなテキスト形式で<b>クリップボード</b>に送ります。
+                                    </li>
+                                    <li>
+                                        各行は<b>山括弧《》で囲ったカード名</b>とそのカードの枚数で構成されます。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                表記順序と区切り文字の指定
+                                <ul>
+                                    <li>
+                                        「テキストとしてコピー」する際の各行の形式を指定します。
+                                    </li>
+                                    <li>
+                                        例
+                                        <ul>
+                                            <li>
+                                                順序「数→名前」、区切り「_x_」<br>
+                                                <span class="script">1 x 《カード名》</span>
+                                            </li>
+                                            <li>
+                                                順序「名前→数」、区切り「×」<br>
+                                                <span class="script">《カード名》×1</span>
+                                            </li>
+                                            <li>
+                                                順序「名前→数」、区切り「tab」<br>
+                                                <span class="script">《カード名》&Tab;1</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                幅の変更
+                                <ul>
+                                    <li>
+                                        「カード名」列の幅を調節できます。
+                                    </li>
+                                    <li>
+                                        長いカード名がある列の値を大きめにしておくとよいです。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                カード名
+                                <ul>
+                                    <li>
+                                        長いカード名は縮小されて表示されます。
+                                    </li>
+                                    <li>
+                                        名前が長すぎて小さくなる場合、<b>マウスカーソルを名前に合わせてクリック</b>し、<b>改行(<span class="script">Enter</span>)</b>してください。<br>
+                                        <img src="img/deck_cardlist_name_1.png"/> → <img src="img/deck_cardlist_name_2.png"/><br>
+                                        その後「画像として保存」することで、名前欄が2行の状態にできます。<br>
+                                        <img src="img/deck_cardlist_name_3.png"/>
+                                    </li>
+                                    <li>
+                                        カード名ごとの改行の位置はアプリ設定に記憶されるため、一度改行位置を設定すればデッキを編集しても設定しなおす必要はありません。
+                                        <ul>
+                                            <li>
+                                                ただし、<b>記憶されるのは1つ目の改行位置のみ</b>です。3行以上にしても、2つ目以降の改行はデッキを編集またはアプリを再起動すると失われます。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
