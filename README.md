@@ -1,11 +1,12 @@
-![logo](https://github.com/user-attachments/assets/9531efef-18a2-4d10-9af3-33f43241f737)
-<h1>BmsMaker3</h1>
+<img alt="splash" src="https://github.com/user-attachments/assets/00b760e8-e53a-4b61-a81b-1e16a128ee40" />
 
-<h3>オールインワン型BMS制作補助ツール </h3>
+<h1>LN YuGiOh Database</h1>
 
-詳細はオンラインマニュアルを参照してください。<br/>
-https://kuroki-narumi.github.io/BmsMaker3-Manual/<br/>
+<h3>オフラインで使用可能な遊戯王OCGのカードデータベース</h3>
+
+**オンラインマニュアルは未作成です。**<br/>
+旧バージョンのマニュアル: https://kuroki-narumi.github.io/LN-YuGiOhDatabase/<br/>
 <br/>
 Releasesからリリースの一覧を確認できます。
-- ※2025/04/13時点で、BmsMaker3 は<b>オープンソースではありません。</b>
-- Releasesの「Source Code」に含まれるのはマニュアルのHTMLリソースであり、BmsMaker3のソースコードではありません。
+- Releasesの「Source Code」に含まれるのはマニュアルのHTMLリソースであり、アプリ本体のソースコードではありません。
+- YuGiOhDatabaseを含むROKINAが作成したプログラムのソースコードは https://github.com/Kuroki-Narumi/LivreNoirLibrary10 で公開されています。
