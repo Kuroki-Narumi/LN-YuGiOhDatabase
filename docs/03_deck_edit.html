@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>デッキ&gt;デッキ編集</h1>
+                <p>
+                    このアプリ上で使うデッキを編集するタブです。
+                </p>
+                <ul>
+                    <li>
+                        このタブで設定した内容は以下の場面で参照されます。
+                        <ul>
+                            <li>
+                                「デッキ」の他のタブ
+                            </li>
+                            <li>
+                                <a href="04_duel_log.html">デュエルログ&gt;ログ管理</a>のカードリスト
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack">
+                <h2>注意</h2>
+                実用上の利便性のため、以下の仕様となっています。
+                <ul>
+                    <li>
+                        デッキ/EXデッキ/サイドデッキのそれぞれで<b>カードは100種類まで</b>投入できます。
+                        <ul>
+                            <li>
+                                100種類を超えてカードを追加しようとした場合、超えるぶんは無視されます。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="01_database_regulation.html">リミットレギュレーション</a>を無視して<b></b>全てのカードを3枚まで採用できます。</b>
+                        <ul>
+                            <li>
+                                使用不可カードも採用できます。
+                            </li>
+                            <li>
+                                参考としてカードには<a href="00_icons.html#limit">リミットアイコン</a>が表示されます。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        「ルール上同名カードとして扱う」カードも<b>それぞれ3枚ずつ採用できます。</b>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/03_01_deck.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89,289, 27, popup/searchText.html;
+                     297, 89, 22, 27, popup/openSearch.html;
+                     319, 89, 22, 27, popup/search_clear.html;
+                     344, 89, 40, 27, popup/listCount.html;
+                     501, 89, 22, 27, popup/undo.html;
+                     523, 89, 22, 27, popup/redo.html;
+                     553, 89, 22, 27, popup/new.html;
+                     575, 89, 22, 27, popup/open.html;
+                     597, 89, 22, 27, popup/save.html;
+                     627, 89, 44, 27, popup/deck_import.html;
+                     671, 89, 22, 27, popup/deck_export.html;
+                     701, 89, 22, 27, popup/shareTo.html;
+                     723, 89, 22, 27, popup/shareFrom.html;
+                     770, 89, 22, 29, popup/deck_side.html;
+                     792, 89,227, 29, popup/deck_header.html;
+                    1019, 89, 22, 29, popup/deck_clear.html;
+                     792,499,227, 25, popup/deck_header.html;
+                    1019,499, 22, 25, popup/deck_clear.html;
+                       5,120,740,558, popup/deck_cardList.html, top;
+                     769,120,272,379, popup/deck_cardList_deck.html, top;
+                     769,524,272,154, popup/deck_cardList_deck.html, top;
+                     745,120, 24,190, popup/deck_add.html, center;
+                     745,310, 24,189, popup/deck_remove.html, center;
+                     745,524, 24, 77, popup/deck_add.html, center;
+                     745,601, 24, 77, popup/deck_remove.html, center;
+                    ">
+                </div>
+            </div>
+            <div class="stack" id="import">
+                <h2>デッキインポート手順</h2>
+                <ol>
+                    <li>
+                        <a href="https://www.db.yugioh-card.com/yugiohdb/" target="_blank">公式データベース</a>の任意の<b>デッキページ</b>を開いてください。
+                    </li>
+                    <li>
+                        デッキ画面のURL欄をクリックし、URLをコピーしてください。<br>
+                        <img src="img/03_01_deck_import1_1.png" style="height: 70px"/>
+                    </li>
+                    <li>
+                        「YuGiOh Database」のデッキ編集タブに戻り、<img src="img/icons/Download.png" class="icon16"/>を押します。
+                    </li>
+                    <li>
+                        下のような画面が表示されます。<br>
+                        <img src="img/03_01_deck_import1_2.png"/>
+                        <ul>
+                            <li>
+                                テキストボックスにデッキURLを<b>貼り付け</b>てください。(通常の文字入力は受け付けません)
+                            </li>
+                            <li>
+                                デッキURLをコピーした状態の場合、テキストボックスには<b>自動的に</b>そのURLが入ります。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        「インポート開始」を押すと、そのURLからデッキを開き、その内容をデッキのカードリストに反映します。
+                        <ul>
+                            <li>
+                                以下のいずれかの原因により、インポートは<b>失敗</b>します。
+                                <ul>
+                                    <li>
+                                        インターネット接続に失敗、または指定されたURLのデッキが存在しない。
+                                    </li>
+                                    <li>
+                                        指定されたURLのデッキにカードが1枚も入っていない。
+                                    </li>
+                                    <li>
+                                        指定されたURLのデッキが<b>非公開</b>になっている。
+                                        <ul>
+                                            <li>
+                                                特にマスターデュエルから<b>エクスポート</b>したデッキは、初期状態では<b>非公開</b>となっているのでご注意ください。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="stack" id="import2">
+                <h2>インポート(非公開)手順</h2>
+                <ul>
+                    <li>
+                        公式データベースの「マイデッキ」のうち、『遊戯王マスターデュエル』からのエクスポート等で<b>非公開</b>状態となっているデッキを読み込むための機能です。
+                    </li>
+                    <li>
+                        公開デッキも同じ手順で読み込めますが、公開デッキの場合は上記<a href="#import">通常のインポート</a>のほうが手順が少なく手軽です。
+                    </li>
+                </ul>
+                <ol>
+                    <li>
+                        <a href="https://www.db.yugioh-card.com/yugiohdb/" target="_blank">公式データベース</a>から「マイデッキ」の画面を開き、任意のデッキの詳細画面を開いてください。<br>
+                        <b>編集モードにはしないでください。</b><br>
+                        <img src="img/03_01_deck_import2_1.png" style="height: 70px"/>
+                    </li>
+                    <li>
+                        ブラウザの<b>JavaScriptコンソール</b>を開いてください。(一般的には<span class="script">F12</span>)
+                    </li>
+                    <li>
+                        「YuGiOh Database」のデッキ編集タブに戻り、<img src="img/icons/Download_Red.png" class="icon16"/>を押します。
+                    </li>
+                    <li>
+                        下のような画面が表示されます。<br>
+                        <img src="img/03_01_deck_import2_2.png"/>
+                    </li>
+                    <li>
+                        <b>クリップボードにJavaScriptコードが送られている</b>ので、ブラウザのコンソールに<b>貼り付け</b>てください。<br>
+                        <img src="img/03_01_deck_import2_3.png"/>※画像はFireFoxのもの
+                    </li>
+                    <li>
+                        <span class="script">Enter</span>を押して貼り付けられたJavaScriptコードを実行すると、コンソールに<span class="script">Object { main: ... }</span>というメッセージが表示されます(<b>※FireFoxの場合</b>)ので、それを右クリックして<b>「オブジェクトをコピー」</b>してください。<br>
+                        <img src="img/03_01_deck_import2_4.png"/>※画像はFireFoxのもの
+                        <ul>
+                            <li>
+                                コピーの際、必ず<b><span class="script">Object</span>と書かれている部分を右クリック</b>してください。他の部分を右クリックした場合、オブジェクト全体ではなくその部分だけがコピーされる場合があります。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        「YuGiOh Database」に戻って「インポート開始」を押すと、コピーされたオブジェクトの内容をデッキに反映します。
+                    </li>
+                </ol>
+            </div>
+            <div class="stack" id="export">
+                <h2>デッキエクスポート手順</h2>
+                <ol>
+                    <li>
+                        <a href="https://www.db.yugioh-card.com/yugiohdb/" target="_blank">公式データベース</a>から「マイデッキ」の画面を開き、「デッキを追加」してください。<br>
+                        <img src="img/03_01_deck_export_1.png" style="height: 70px"/>
+                    </li>
+                    <li>
+                        「編集開始」を押して編集モードに移行してください。<br>
+                        <img src="img/03_01_deck_export_2.png" style="height: 30px"/>
+                    </li>
+                    <li>
+                        ブラウザの<b>JavaScriptコンソール</b>を開いてください。(一般的には<span class="script">F12</span>)
+                    </li>
+                    <li>
+                        「YuGiOh Database」のデッキ編集タブに戻り、<img src="img/icons/Upload.png" class="icon16"/>を押します。
+                    </li>
+                    <li>
+                        下のような画面が表示されます。<br>
+                        <img src="img/03_01_deck_export_3.png"/>
+                    </li>
+                    <li>
+                        <b>クリップボードにJavaScriptコードが送られている</b>ので、ブラウザのコンソールに<b>貼り付け</b>てください。<br>
+                        <img src="img/03_01_deck_export_4.png"/>※画像はFireFoxのもの
+                    </li>
+                    <li>
+                        <span class="script">Enter</span>を押して貼り付けられたJavaScriptコードを実行すると、デッキの内容が編集画面に反映されます。
+                    </li>
+                    <li>
+                        「保存」を押して編集を終了します。<br>
+                        <img src="img/03_01_deck_export_5.png" style="height: 30px"/>
+                    </li>
+                </ol>
+            </div>
+            <div class="common" src="common/shareImage.html"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>統計&gt;統計表</h1>
+                <p>
+                    カードを性質ごとに分けて表で確認できる機能です。
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/02_01_stats_table.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89, 84, 27, popup/stats_reload.html;
+                      92, 89,289, 27, popup/searchText.html;
+                     384, 89, 22, 27, popup/openSearch.html;
+                     407, 89, 22, 27, popup/search_clear.html;
+                     429, 89, 44, 27, popup/tableCount.html;
+                     537, 90,168, 25, popup/table_selector.html;
+                     709, 89,132, 27, popup/stats_save.html;
+                     849, 89,188, 27, popup/stats_copy.html;
+                       5,120, 66, 22, popup/table_align.html;
+                      73,120, 74, 27, popup/table_zero.html;
+                     147,120,126, 27, popup/table_style.html;
+                     273,120,192, 27, popup/table_digits.html;
+                     467,120, 73, 27, popup/table_total.html;
+                     955,120, 86, 27, popup/image_size.html;
+                      5,151,1036,527, popup/table.html, top;
+                    ">
+                </div>
+            </div>
+            <div>
+                <h2>表の見かた</h2>
+                <ul>
+                    <li>
+                        「Total」のすぐ右には、サーチバーの検索条件に適合する<b>カードの総数</b>が表示されます。
+                        <ul>
+                            <li>
+                                上の画像では「<b>14252</b>」と表示されていますが、これは<b>この表の内容が14252種類のカードから作成されている</b>ことを示します。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        1行目及び1列目には、それぞれの特徴に当てはまるカードの総数が表示されます。
+                        <ul>
+                            <li>
+                                例えば上の画像で「戦士族」の直下にある「<b>1161</b>」のセルは、全カード<b>14252</b>種類のうち「戦士族のモンスターカード」が<b>1161</b>種類あることを示しています。
+                            </li>
+                            <li>
+                                例えば上の画像で「地属性」のすぐ右にある「<b>2079</b>」のセルは、全カード<b>14252</b>種類のうち「地属性モンスターカード」が<b>2079</b>種類あることを示しています。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        それ以外の各セルには、各行と列の特徴を併せ持つカードの枚数が表示されます。
+                        <ul>
+                            <li>
+                                例えば上の画像で「戦士族-地属性」のセルには「<b>394</b>」と表示されていますが、これは全カード<b>14252</b>種類のうち「戦士族・地属性のモンスターカード」が<b>394</b>種類あることを示しています。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        セルをクリックするとそのセルの具体的なカード内容を確認できます。<br>
+                        <img src="img/02_01_table_list.png"/>
+                        <ul>
+                            <li>
+                                カード名にマウスカーソルを合わせると、その詳細が表示されます。
+                            </li>
+                            <div class="common" src="common/cardLink.html"></div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

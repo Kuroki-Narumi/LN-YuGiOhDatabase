@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>統計&gt;ステータスマッチング</h1>
+                <p>
+                    指定されたモンスターと特定のステータスが一致するモンスターを調べるため機能です。
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/02_04_stats_match.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89, 84, 27, popup/stats_reload.html;
+                      89, 89,254, 27, popup/match_option.html;
+                       5,120,254, 27, popup/searchText.html;
+                     259,120, 22, 27, popup/openSearch.html;
+                     281,120, 22, 27, popup/search_clear.html;
+                     303,120, 40, 27, popup/listCount.html;
+                     365, 89,289, 27, popup/searchText.html;
+                     657, 89, 22, 27, popup/openSearch.html;
+                     679, 89, 22, 27, popup/search_clear.html;
+                     701, 89, 44, 27, popup/listCount.html;
+                       5,151,338,527, popup/match_list1.html, top;
+                     365,120,676,558, popup/match_list2.html, top;
+                    ">
+                </div>
+            </div>
+            <div class="stack" id="options">
+                <h2>設定</h2>
+                <div class="grid_9">
+                    <img src="img/02_04_stats_match_options.png" class="sticky-left"/>
+                    <div style="grid-area: content;">
+                        <ol>
+                            <li>
+                                比較項目
+                                <ul>
+                                    <li>
+                                        一致するかどうかを判定したいステータスにチェックします。
+                                    </li>
+                                    <li>
+                                        「レベル」をチェックすると、<b>エクシーズモンスター</b>は候補から除外されます。
+                                    </li>
+                                    <li>
+                                        「レベル」「守備力」「攻+守」のいずれか1つ以上をチェックすると、<b>リンクモンスター</b>は候補から除外されます。
+                                    </li>
+                                    <li>
+                                        「攻+守」をチェックすると、<b>攻撃力または守備力が「?」のモンスター</b>は候補から除外されます。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                一致数
+                                <ul>
+                                    <li>
+                                        上でチェックしたステータスのうち、いくつが一致すればよいかを指定します。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                同名を除外
+                                <ul>
+                                    <li>
+                                        チェックすると、自分自身を検索候補から除外します。
+                                    </li>
+                                    <li>
+                                        チェックしない場合、<b>検索リストにはそのカード自身が含まれる</b>場合があります。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                候補タイプ
+                                <ul>
+                                    <li>
+                                        検索対象となるカードタイプを指定します。
+                                        <ul>
+                                            <li>
+                                                <b>全て</b>：全てのモンスターが候補になります。
+                                            </li>
+                                            <li>
+                                                <b>メインデッキ</b>：メインデッキに入るモンスター(儀式を含む)のみが候補になります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        「リスト候補」は候補リスト(左)に表示するカード、「検索候補」は検索リスト(右)に表示するカードのタイプを指定します。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                プリセット
+                                <ul>
+                                    <li>
+                                        ボタンを押すとその内容に従って設定されます。
+                                    </li>
+                                    <li>
+                                        <b>造形家</b>：<a href="https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=14478&request_locale=ja" target="_blank">《魂の造形家》</a>
+                                        <ul>
+                                            <li>
+                                                比較項目：攻+守
+                                            </li>
+                                            <li>
+                                                リスト候補：全て、検索候補：メイン
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>スモワ</b>：<a href="https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=16555&request_locale=ja" target="_blank">《スモール・ワールド》</a>
+                                        <ul>
+                                            <li>
+                                                比較項目：属性、種族、レベル、攻撃力、守備力
+                                            </li>
+                                            <li>
+                                                一致数：1つのみ
+                                            </li>
+                                            <li>
+                                                リスト候補：メイン、検索候補：メイン
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>悪醒師</b>：<a href="https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17440&request_locale=ja" target="_blank">《悪醒師ナイトメルト》</a>
+                                        <ul>
+                                            <li>
+                                                比較項目：属性、種族、レベル、攻撃力、守備力
+                                            </li>
+                                            <li>
+                                                一致数：5つ以上(全て)
+                                            </li>
+                                            <li>
+                                                同名を除外
+                                            </li>
+                                            <li>
+                                                リスト候補：全て、検索候補：全て
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>針鼠</b>：<a href="https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=19410&request_locale=ja" target="_blank">《レスキューヘッジホッグ》</a>
+                                        <ul>
+                                            <li>
+                                                比較項目：属性、種族、レベル
+                                            </li>
+                                            <li>
+                                                一致数：3つ以上(全て)
+                                            </li>
+                                            <li>
+                                                同名を除外
+                                            </li>
+                                            <li>
+                                                リスト候補：メイン、検索候補：メイン
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>数式の仕様</h1>
+                <img src="img/00_02_search_expression.png">
+                <ul>
+                    <li>
+                        検索条件の「条件式」では、任意の数式によって複雑な検索条件を指定できます。
+                    </li>
+                    <li>
+                        「攻撃力」などの範囲指定による絞り込みとは併用できます。
+                    </li>
+                    <li>
+                        テキストボックスの内容が正しい数式として解釈できない場合、<b style="color: #f44;">枠が赤く</b>なります。
+                        <ul>
+                            <li>
+                                <b style="color: #f44;">枠が赤い状態</b>で検索を実行した場合、条件式による絞り込みは<b>適用されません</b>。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        数式の計算結果が<b><span class="script">0</span>以外になる</b>場合に、そのカードはヒットします。
+                    </li>
+                </ul>
+                <a href="#cheet">検索チートシート</a>
+            </div>
+            <div class="stack">
+                <h2>使用例</h2>
+                <ul>
+                    <li>
+                        <span class="script">atk % 100 = 50</span>: 「攻撃力を100で割った余りが50」であるようなモンスターがヒットします。
+                    </li>
+                    <li>
+                        <span class="script">atk - def = 500</span>: 「攻撃力と守備力の差が500」であるようなモンスターがヒットします。
+                    </li>
+                    <li>
+                        <span class="script">atk = level * 100</span>: 「攻撃力がレベルの100倍」であるようなモンスターがヒットします。
+                    </li>
+                    <li>
+                        <span class="script">atk % 100 = 50 & atk = def</span>: 「攻撃力を100で割った余りが50」かつ「攻撃力と守備力が等しい」であるようなモンスター(〈機巧〉など)がヒットします。
+                    </li>
+                    <li>
+                        <span class="script">(atk = 2800 | atk = 2400) & (def = 1000)</span>: 「攻撃力が2800または2400」かつ「守備力が1000」であるようなモンスター(いわゆる帝ステータス)がヒットします。
+                    </li>
+                </ul>
+            </div>
+            <div class="stack">
+                <p>
+                    利用可能な表現は以下の通りです。
+                </p>
+                <ul>
+                    <li>
+                        数値
+                        <ul>
+                            <li>
+                                <span class="script">a</span><span class="script">atk</span>: 対象カードの「攻撃力」の値に変換されます。
+                                <ul>
+                                    <li>
+                                        攻撃力「?」は<b>-1</b>として扱われます。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="script">d</span><span class="script">def</span>: 対象カードの「守備力」の値に変換されます。
+                                <ul>
+                                    <li>
+                                        守備力「?」は<b>-1</b>として扱われます。
+                                    </li>
+                                    <li>
+                                        条件式にこれを一つでも含めた場合、<b>リンクモンスターは検索候補から除外されます。</b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="script">lv</span><span class="script">level</span>: 対象カードの「レベル/ランク/リンク」の値に変換されます。
+                            </li>
+                            <li>
+                                <span class="script">p</span><span class="script">scale</span>: 対象カードの「Pスケール」の値に変換されます。
+                                <ul>
+                                    <li>
+                                        条件式にこれを一つでも含めた場合、<b>ペンデュラムモンスター以外は検索から除外されます。</b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                その他一般的な数値表現: 書いた通りの数値になります。負の数や小数も指定可能です。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        数値演算
+                        <ul>
+                            <li>
+                                2つの数値(<span class="script">X</span>および<span class="script">Y</span>で表される)についての計算を行い、その結果となる数値に変換されます。
+                            </li>
+                            <li>
+                                <span class="script">X + Y</span>: 2つの数値を<b>足した</b>結果の数値になります。
+                            </li>
+                            <li>
+                                <span class="script">X - Y</span>: XからYを<b>引いた</b>結果の数値になります。
+                            </li>
+                            <li>
+                                <span class="script">X * Y</span>: 2つの数値を<b>掛けた</b>結果の数値になります。
+                            </li>
+                            <li>
+                                <span class="script">X / Y</span>: XをYで<b>割った</b>結果の数値になります。<b>小数点以下も計算されます。</b>
+                            </li>
+                            <li>
+                                <span class="script">X % Y</span>: XをYで<b>割った余り</b>の数値になります。
+                            </li>
+                            <li>
+                                <span class="script">X ** Y</span>: <b>XのY乗</b>の数値になります。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        比較演算
+                        <ul>
+                            <li>
+                                2つの数値(<span class="script">X</span>および<span class="script">Y</span>で表される)についての比較を行い、<b>真なら<span class="script">1</span></b>、<b>偽なら<span class="script">0</span></b>に変換されます。
+                            </li>
+                            <li>
+                                <span class="script">X = Y</span><span class="script">X == Y</span>: 2つの数値が<b>等しい</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">X != Y</span>: 2つの数値が<b>等しくない</b>なら<span class="script">1</span>、等しければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">X &lt; Y</span>: <b>XがYより小さい</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">X &lt;= Y</span>: <b>XがYより小さいか等しい</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">X &gt; Y</span>: <b>XがYより大きい</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">X &gt;= Y</span>: <b>XがYより大きいか等しい</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        論理演算
+                        <ul>
+                            <li>
+                                1つまたは2つの<b>真偽値(<span class="script">0</span>は偽、それ以外は真)</b>(<span class="script">P</span>および<span class="script">Q</span>で表される)についての比較を行い、<b>真なら<span class="script">1</span></b>、<b>偽なら<span class="script">0</span></b>に変換されます。
+                            </li>
+                            <li>
+                                <span class="script">!P</span>: <b>Pが真でない</b>なら<span class="script">1</span>、真なら<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">P & Q</span><span class="script">P && Q</span>: PとQが<b>ともに真である</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">P | Q</span><span class="script">P || Q</span>: PとQの<b>片方または両方が真</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                            <li>
+                                <span class="script">P ^ Q</span>: PとQのうち<b>片方だけが真</b>なら<span class="script">1</span>、そうでなければ<span class="script">0</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        三項演算子
+                        <ul>
+                            <li>
+                                <span class="script">P ? A : B</span>: Pが真(<span class="script">0</span>以外)ならA、偽(<span class="script">0</span>)ならBに変換されます。
+                            </li>
+                            <li>
+                                AとBはそれぞれ数式にすることもできます。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack" id="cheet">
+                <h2>検索チートシート</h2>
+                <p>
+                    特定ステータスを指定するカードを検索する際の指定方法の早見表です。
+                </p>
+                <ul>
+                    <li>
+                        攻撃力と守備力が同じ
+                        <ul>
+                            <li>
+                                ステータス / 条件式: <span class="script">atk = def</span>
+                            </li>
+                            <li>
+                                〈機巧〉の場合さらに:
+                                <ul>
+                                    <li>
+                                        カードタイプ / 種族:「機械族」
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                《赫聖の妖騎士》の場合さらに:
+                                <ul>
+                                    <li>
+                                        カードタイプ / 属性:「光」
+                                    </li>
+                                    <li>
+                                        カードタイプ / 種族:「魔法使い族」
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        攻撃力800n (《ブラック・ガーデン》)
+                        <ul>
+                            <li>
+                                ステータス / 条件式: <span class="script">atk % 800 = 0</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        攻撃力または守備力が1600 (《サンダー・ハンド》)
+                        <ul>
+                            <li>
+                                ステータス / 条件式: <span class="script">atk = 1600 or def = 1600</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

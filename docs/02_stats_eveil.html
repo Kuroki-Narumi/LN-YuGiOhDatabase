@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>統計&gt;エヴァイユ</h1>
+                <p>
+                    <a href="https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17105&request_locale=ja" target="_blank">《ナンバーズ・エヴァイユ》</a>で特殊召喚可能な「No.」モンスターについて、その素材となる候補を調べる機能です。
+                </p>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/02_06_stats_eveil.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89, 84, 27, popup/stats_reload.html;
+                      93, 89,162, 27, popup/searchText.html;
+                     255, 89, 22, 27, popup/search_clear.html;
+                     277, 89, 40, 27, popup/listCount.html;
+                     339, 89,127, 27, popup/eveil_filter.html;
+                     466, 89, 33, 27, popup/listCount.html;
+                       5,120,312,558, popup/eveil_cardList.html, top;
+                     339,120,160,558, popup/eveil_setList.html, top;
+                     521, 89,520,589, popup/eveil_material.html, top;
+                    ">
+                </div>
+            </div>
+            <div class="stack" id="filter">
+                <h2>素材の絞り込み</h2>
+                <img src="img/02_06_stats_eveil_filter.png"/>
+                <div class="grid_9">
+                    <ul style="grid-area: content;">
+                        <li>
+                            チェックすると、その「No.」を素材候補に指定します。
+                            <ul>
+                                <li>
+                                    例: <span class="script">13</span>をチェックすると、以下のように絞り込まれます。
+                                </li>
+                                <li>
+                                    候補リスト(左端)には、「No.13」を使って作れる「No.」のみが表示される。
+                                </li>
+                                <li>
+                                    組み合わせリスト(中央)には、「No.13」を含むような組み合わせのみが表示される。
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="common" src="common/checkBox.html"></div>
+                        <li>
+                            <img src="img/icons/Cross.png" class="icon16">を押すと全てのチェックを外します。
+                        </li>
+                        <li>
+                            上部のコンボボックスで、複数の「No.」をチェックした場合のマッチ方法を指定します。<br>
+                            <div class="grid_9">
+                                <img src="img/filter_matchType.png" style="grid-area: left;"/>
+                                <ul style="grid-area: content;">
+                                    <li>
+                                        <b>いずれか</b>: 指定された「No.」のうち、<b>いずれか1つ以上</b>を含む素材候補がヒットします。
+                                    </li>
+                                    <li>
+                                        <b>全て含む</b>: 指定された「No.」を<b>全て含む</b>素材候補がヒットします。
+                                        <ul>
+                                            <li>
+                                                <b>指定された「No.」が5種類以上</b>の場合、1つもヒットしなくなります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>最小一致</b>: <b>指定されていない「No.」を含まない</b>ような素材候補がヒットします。
+                                        <ul>
+                                            <li>
+                                                <b>指定された「No.」が3種類以下</b>の場合、1つもヒットしなくなります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>完全一致</b>: 指定された「No.」と<b>全く組み合わせ</b>の素材候補がヒットします。
+                                        <ul>
+                                            <li>
+                                                <b>指定された「No.」が4種類でない</b>場合、1つもヒットしなくなります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

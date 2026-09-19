@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>データベース&gt;レギュレーション</h1>
+                <p>
+                    リミットレギュレーション(デッキに入れることのできるカード枚数の規定)を確認/編集するためのタブです。
+                </p>
+                <ul>
+                    <li>
+                        アプリの初回起動時点では空白となっています。適宜設定してください。
+                    </li>
+                    <li>
+                        このタブで設定した制限項目は以下の場面で参照されます。
+                        <ul>
+                            <li>
+                                <a href="01_database_card.html">カードリスト</a>などのカード情報欄
+                            </li>
+                            <li>
+                                <a href="00_search.html">カード検索</a>における絞り込み項目
+                            </li>
+                            <li>
+                                <a href="03_deck_edit.html">デッキ編集</a>における制限表示
+                                <ul>
+                                    <li>
+                                        これは<b>表示のみ</b>であり、実際は制限指定に関わらず常に3枚までデッキに入れることができます。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>使用不可カード</b>(「公式デュエルでは使用できません」と書かれているカード)については、このタブでの設定に関わらず<b>常に<img src="img/icon_limit_u.png" style="width: 16px;">使用不可</b>扱いとなります。
+                    </li>
+                </ul>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/01_03_database_regulation.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89,175, 27, popup/searchText.html;
+                     180, 89, 22, 27, popup/openSort.html;
+                     202, 89, 22, 27, popup/openSearch.html;
+                     224, 89, 22, 27, popup/search_clear.html;
+                     246, 89, 40, 27, popup/listCount.html;
+                     294, 89, 22, 27, popup/undo.html;
+                     316, 89, 22, 27, popup/redo.html;
+                     346, 89, 22, 27, popup/new.html;
+                     368, 89, 22, 27, popup/open.html;
+                     390, 89, 22, 27, popup/save.html;
+                     420, 89, 22, 27, popup/shareTo.html;
+                     442, 89, 22, 27, popup/shareFrom.html;
+                     921, 91,118, 24, popup/regulation_update.html;
+                     290,120,185, 26, popup/regulation_forbidden.html;
+                     479,120,185, 26, popup/regulation_limit1.html;
+                     668,120,185, 26, popup/regulation_limit2.html;
+                     857,120,184, 26, popup/regulation_specified.html;
+                       5,120,281,558, popup/cardList_regulation.html, top;
+                     290,146,185,532, popup/cardList_regulation.html, top;
+                     479,146,185,532, popup/cardList_regulation.html, top;
+                     668,146,185,532, popup/cardList_regulation.html, top;
+                     857,146,184,532, popup/cardList_regulation.html, top;
+                    ">
+                </div>
+            </div>
+            <div class="common" src="common/shareImage.html"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

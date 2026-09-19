@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>検索ウィンドウ</h1>
+                <p>
+                    カードリストの上部に表示されるサーチバーにおいて、<img src="img/icons/ZoomUp.png" class="icon16">を押すと開くウィンドウです。
+                </p>
+            </div>
+            <div class="stack">
+                <h2>共通事項</h2>
+                <ul>
+                    <div class="common" src="common/checkBox.html"></div>
+                    <li>
+                        それぞれのカテゴリで、一つもチェックされていない場合は<b>そのカテゴリのチェック自体を行いません</b>。
+                        <ul>
+                            <li>
+                                例:「種類」に一つもチェックが入っていない場合、全種類のカードが検索候補になります。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        指定された特徴を持たないカードは自動的に検索候補から外れます。
+                        <ul>
+                            <li>
+                                例:「属性」に一つでもチェックを入れた場合、属性がそもそも存在しない魔法/罠カードは検索から除外されます。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack">
+                <h2>1ページ目</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/00_02_search1.png" maps="
+                       4,  4, 60, 31, popup/search_apply.html;
+                      68,  4, 74, 31, popup/search_default.html;
+                     148, 12,244, 27, popup/search_tab.html;
+                     398,  4, 80, 31, popup/search_preset.html;
+                     482,  4, 72, 31, popup/search_close.html;
+                       5, 40,550,496, popup/search_type.html, top;
+                    ">
+                </div>
+            </div>
+            <div class="stack">
+                <h2>2ページ目</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/00_02_search2.png" maps="
+                       4,  4, 60, 31, popup/search_apply.html;
+                      68,  4, 74, 31, popup/search_default.html;
+                     148, 12,244, 27, popup/search_tab.html;
+                     398,  4, 80, 31, popup/search_preset.html;
+                     482,  4, 72, 31, popup/search_close.html;
+                       5, 40,550, 43, popup/search_effect.html;
+                       5, 84,550, 78, popup/search_ability.html;
+                       5,163,550, 78, popup/search_abilityEx.html;
+                       5,242,550, 78, popup/search_level.html;
+                       5,321,399,115, popup/search_scale.html;
+                     405,321,150,115, popup/search_marker.html;
+                       5,437,550, 64, popup/search_status.html;
+                       5,501,550, 26, popup/search_expression.html;
+                    ">
+                </div>
+            </div>
+            <div class="stack">
+                <h2>3ページ目</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/00_02_search3.png" maps="
+                       4,  4, 60, 31, popup/search_apply.html;
+                      68,  4, 74, 31, popup/search_default.html;
+                     148, 12,244, 27, popup/search_tab.html;
+                     398,  4, 80, 31, popup/search_preset.html;
+                     482,  4, 72, 31, popup/search_close.html;
+                       5, 40,550, 84, popup/search_regulation.html;
+                       5,125,550, 43, popup/search_locale.html;
+                       5,169,550,105, popup/search_date.html;
+                       5,275,550, 66, popup/search_textLength.html;
+                       5,342,550,118, popup/search_text.html;
+                    ">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

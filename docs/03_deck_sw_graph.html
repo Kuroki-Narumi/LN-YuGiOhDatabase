@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+            .selected
+            {
+                color: #88f;
+            }
+            .connected
+            {
+                color: #8f8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>デッキ&gt;スモワ:デッキ内</h1>
+                <p>
+                    <a href="03_deck_edit.html">デッキ内</a>の<b>スモワ条件</b>の関係をグラフとして可視化する機能です。
+                </p>
+                <div class="common" src="common/sw_cond.html"></div>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/03_04_deck_sw_graph.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       9, 89, 84, 27, popup/deck_sw_reload.html;
+                     101, 89,110, 27, popup/deck_sw_showConnect.html;
+                     219, 89,124, 27, popup/deck_sw_showEdge.html;
+                     351, 89,132, 27, popup/deck_sw_save.html;
+                     491, 89,188, 27, popup/deck_sw_copy.html;
+                       3,122,120, 26, popup/deck_sw_radius.html;
+                     123,122,247, 26, popup/deck_sw_nameSize.html;
+                     370,122,123, 26, popup/deck_sw_nameOutline.html;
+                     493,122,320, 26, popup/deck_sw_grid.html;
+                     223,158,600,522, popup/deck_sw_graph.html, center;
+                    ">
+                </div>
+            </div>
+            <div class="stack" id="howto">
+                <h2>使い方</h2>
+                <div class="grid_9">
+                    <img src="img/03_04_sw_graph_1.png" class="sticky-left"/>
+                    <ul style="grid-area: content;">
+                        <li>
+                            グラフは、◯で表される<b>ノード(頂点)</b>と、線で表される<b>辺</b>からなります。
+                        </li>
+                        <li>
+                            各ノードは、そのノードと<b>スモワ条件</b>を満たす別のノードと<b>辺</b>で繋がっています。
+                        </li>
+                        <li>
+                            ノードと辺はマウスの<b>ドラッグ</b>により移動できます。
+                            <ul>
+                                <li>
+                                    ノードを<b>ドラッグ</b>することでノードを移動できます。
+                                </li>
+                                <li>
+                                    辺の<b>中点をドラッグ</b>することで、辺の形をある程度変えることができます。
+                                </li>
+                                <li>
+                                    辺の<b>中点を右クリック</b>すると、辺の形を初期化(折れ曲がっていない状態に)します。
+                                </li>
+                                <li>
+                                    <span class="script">Ctrl</span>キーを押しながらドラッグすることで、<b>グリッド</b>に合わせた移動が可能です。ついでにそのノードの座標も表示されます。
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            ノードを<b>クリック</b>することでそのノードを選択します。
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_9">
+                    <img src="img/03_04_sw_graph_2.png" class="sticky-left"/>
+                    <ul style="grid-area: content;">
+                        <li>
+                            選択中のノードは<b class="selected">青く</b>表示されます。
+                            <ul>
+                                <li>
+                                    これが<b>スモワの始点</b>となります。
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            選択中のノードに直接繋がっているノードは<b class="connected">緑色</b>になり、その接続されている辺は<b class="selected">青く</b>なります。
+                            <ul>
+                                <li>
+                                    これらが<b>スモワの中継</b>となります。
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            「接続先も表示」がチェックされている場合、<b>中継ノードに繋がっているノード</b>の<span class="connected">内側に緑色の円が表示</span>され、その接続されている辺が<b class="connected">緑色</b>になります。
+                            <ul>
+                                <li>
+                                    これらが<b>スモワの終点</b>となります。
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            この例では以下のような情報が分かります。
+                            <ul>
+                                <li>
+                                    《雷天気ターメル》を始点とする繋がりを確認する。
+                                </li>
+                                <li>
+                                    《灰流うらら》と《ドロール&ロックバード》は<b class="connected">緑色になり内側に円も表示されている</b>。
+                                    <ul>
+                                        <li>
+                                            この2者は<b>中継と終点のどちらにもなれる</b>。
+                                        </li>
+                                        <li>
+                                            すなわち、《スモール・ワールド》を使うことで、手札の《ターメル》はこの2者を経由してこの2者を含む各終点に変換できる。
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    《原始生命態ニビル》は<b class="connected">緑色になっている</b>が<b>内側に円は表示されていない</b>。
+                                    <ul>
+                                        <li>
+                                            このカードは《ターメル》を始点としたスモワの<b>中継点</b>にはなるが、<b>《ターメル》からこのカード自身には変換できない</b>。
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    《曇天気スレット》と《雪天気シエル》は<b class="connected">内側に緑の円</b>が表示されている<b>のみ</b>である。
+                                    <ul>
+                                        <li>
+                                            この2者は<b>《ターメル》から直接は繋がらない</b>が、<b>スモワの終点</b>にはなれる。
+                                        </li>
+                                        <li>
+                                            すなわち、《スモール・ワールド》を使うことで、手札の《ターメル》をこの2者のいずれかに変換できる。
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    《増殖するG》は色が変わっていないし、内側の円も表示されていない。
+                                    <ul>
+                                        <li>
+                                            このカードは《ターメル》を使ったスモワの<b>中継にはなれない</b>し、《ターメル》から<b>変換することもできない</b>。
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_9">
+                    <img src="img/03_04_sw_graph_3.png" class="sticky-left"/>
+                    <ul style="grid-area: content;">
+                        <li>
+                            「辺の名前を表示」がチェックされている場合、<b class="selected">青</b>または<b class="connected">緑</b>になっている辺に、更に<b>共通しているステータス</b>表示されます。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

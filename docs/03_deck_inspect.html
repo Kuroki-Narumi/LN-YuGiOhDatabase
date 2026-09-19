@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="content-type">
+        <title>LN YuGiOh Database</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="stack">
+                <h1>デッキ&gt;手札検証:設定</h1>
+                <p>
+                    初期手札の内容を検証する機能の、条件を設定するためのタブです。
+                </p>
+                <div class="common" src="common/inspect_note.html"></div>
+            </div>
+            <div class="stack">
+                <h2>説明</h2>
+                要素をクリックすると説明が表示されます。
+                <div class="image-map" src="img/03_05_deck_inspect_setting.png" maps="
+                       1, 31,659, 56, popup/tab.html;
+                     963, 31, 55, 27, popup/link_db.html;
+                    1018, 31, 24, 27, popup/help.html;
+                       5, 89, 22, 27, popup/undo.html;
+                      27, 89, 22, 27, popup/redo.html;
+                      57, 89, 22, 27, popup/new.html;
+                      79, 89, 22, 27, popup/open.html;
+                     101, 89, 22, 27, popup/save.html;
+                     255, 89, 22, 27, popup/inspect_sort.html;
+                      13,651, 31, 27, popup/list_insert.html;
+                      44,651, 32, 27, popup/list_moveUp.html;
+                      76,651, 31, 27, popup/list_moveDown.html;
+                     107,651, 31, 27, popup/list_delete.html;
+                     146,651, 31, 27, popup/list_cut.html;
+                     177,651, 31, 27, popup/list_copy.html;
+                     208,651, 31, 27, popup/list_paste.html;
+                     239,651, 31, 27, popup/list_duplicate.html;
+                     277,120, 24,265, popup/item_save.html, center;
+                     277,385, 24,264, popup/item_reload.html, center;
+                       5,120,272,529, popup/inspect_list.html, center;
+                     301, 89,380, 31, popup/inspect_name.html;
+                     301,120,380, 31, popup/inspect_group.html;
+                     681, 89,360, 62, popup/inspect_value.html;
+                     301,151,358,527, popup/inspect_deck.html, top;
+                     683,151,358,527, popup/inspect_hand.html, top;
+                     659,177, 24,334, popup/inspect_add.html, center;
+                     659,511, 24,167, popup/inspect_remove.html, center;
+                    ">
+                </div>
+            </div>
+            <div class="stack" id="hands">
+                <h2>手札リストの詳細</h2>
+                <div class="grid_9">
+                    <img src="img/03_05_deck_inspect_hand.png" class="sticky-left"/>
+                    <div style="grid-area: content;">
+                        <ul>
+                            <li>
+                                手札リストは任意個数の<b>サブリスト</b>から構成されます。
+                                <ul>
+                                    <li>
+                                        <b>手札のうち1枚</b>がサブリスト内の<b>いずれか</b>であることを要請します。
+                                    </li>
+                                    <li>
+                                        デッキリストから<b>サブリストの枠内へ</b>項目をドラッグ&ドロップすると、そのカードは該当のサブリストへ追加されます。
+                                        <ul>
+                                            <li>
+                                                「OR」ボタンを押した場合も同じ挙動になります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>異なるサブリスト</b>には<b>同じカードを含めることが可能です。</b>
+                                        <ul>
+                                            <li>
+                                                同じカードを含むサブリストが複数ある場合、それは<b>そのカードをその数だけ手札に持っている</b>ことを要請します。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        サブリストの数はそのまま必要な手札の枚数に一致します。
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                余白
+                                <ul>
+                                    <li>
+                                        手札リストの内容のうち、<b>サブリストの枠の外</b>である部分は単なる余白です。
+                                    </li>
+                                    <li>
+                                        <b>サブリスト</b>が複数ある場合、それぞれの間に<b style="color: #f44">&amp;</b>が表示されます。
+                                    </li>
+                                    <li>
+                                        デッキリストから<b>余白部分へ</b>項目をドラッグ&ドロップすると、新たな<b>サブリスト</b>が作られ、そのカードは新たなサブリストへ追加されます。
+                                        <ul>
+                                            <li>
+                                                「AND」ボタンを押した場合も同じ挙動になります。
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                例
+                                <ul>
+                                    <li>
+                                        この画像では、<b>1つ目のサブリスト</b>は「手札のうち1枚が《雪天気シエル》か《ピリ・レイスの地図》であること」を要請します。
+                                    </li>
+                                    <li>
+                                        この画像では<b>サブリスト</b>が3つ存在する、すなわち<b>手札要求3枚</b>という意味になります。
+                                    </li>
+                                    <li>
+                                        この手札リストの「意味」は、以下のようなものになります。
+                                        <ul>
+                                            <li>
+                                                手札のうち1枚は《雪天気シエル》か《ピリ・レイスの地図》である。
+                                            </li>
+                                            <li>
+                                                手札のうち1枚は《曇天気スレット》《雪の天気模様》《雨の天気模様》《曇りの天気模様》のいずれかである。
+                                            </li>
+                                            <li>
+                                                手札のうち1枚は《天気予報》である。
+                                            </li>
+                                            <li>
+                                                <b>以上の条件を全て満たす。</b>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        具体的な手札状況と、この条件が達成されるかどうか
+                                        <ul>
+                                            <li>
+                                                《シエル》《スレット》《天気予報》: <b>達成</b>
+                                            </li>
+                                            <li>
+                                                《シエル》《雪模様》《天気予報》: <b>達成</b>
+                                            </li>
+                                            <li>
+                                                《スレット》《雪模様》《天気予報》: <b style="color: #f44">不達成</b>
+                                            </li>
+                                            <li>
+                                                《シエル》《シエル》《天気予報》: <b style="color: #f44">不達成</b>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                「A、B、Cの3枚から重複無しで2枚引きたい」といった条件は、一つの条件項目では実現できません。以下のように複数条件を組み合わせる必要があります。
+                                <ul>
+                                    <li>
+                                        1つ目の条件: [AB] & [C]
+                                    </li>
+                                    <li>
+                                        2つ目の条件: [A] & [B]
+                                    </li>
+                                    <li>
+                                        <b>2つの条件を同じグループにする。</b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="common" src="common/inspect_process.html"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -4,8 +4,7 @@
 
 <h3>オフラインで使用可能な遊戯王OCGのカードデータベース</h3>
 
-**オンラインマニュアルは未作成です。**<br/>
-旧バージョンのマニュアル: https://kuroki-narumi.github.io/LN-YuGiOhDatabase/<br/>
+オンラインマニュアル: https://kuroki-narumi.github.io/LN-YuGiOhDatabase/<br/>
 <br/>
 Releasesからリリースの一覧を確認できます。
 - Releasesの「Source Code」に含まれるのはマニュアルのHTMLリソースであり、アプリ本体のソースコードではありません。
