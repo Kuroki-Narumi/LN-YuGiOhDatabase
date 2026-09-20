@@ -1,0 +1,1602 @@
+[
+  {
+    "name": "@イグニスター",
+    "hint": "at igniser"
+  },
+  {
+    "name": "3軸",
+    "hint": "3"
+  },
+  {
+    "name": "4軸",
+    "hint": "4"
+  },
+  {
+    "name": "60枚",
+    "hint": "60"
+  },
+  {
+    "name": "7軸",
+    "hint": "7"
+  },
+  {
+    "name": "8軸",
+    "hint": "8"
+  },
+  {
+    "name": "ABC",
+    "hint": "abc"
+  },
+  {
+    "name": "AOJ",
+    "hint": "aoj ally a-ri- justice"
+  },
+  {
+    "name": "ARG☆S",
+    "hint": "argostars"
+  },
+  {
+    "name": "A宝玉獣",
+    "hint": "advanced crystalbeast ahogyoku"
+  },
+  {
+    "name": "B.F.",
+    "hint": "battlewasp beeforce bi-fo-su bf"
+  },
+  {
+    "name": "BF",
+    "hint": "black wing feather bf"
+  },
+  {
+    "name": "BK",
+    "hint": "battlinboxer burningknuckle bk ba-ning"
+  },
+  {
+    "name": "DD",
+    "hint": "dd"
+  },
+  {
+    "name": "Em",
+    "hint": "perfor enter entame em"
+  },
+  {
+    "name": "EM",
+    "hint": "perfor enter entame em"
+  },
+  {
+    "name": "Evil★Twin",
+    "hint": "eviltwin live"
+  },
+  {
+    "name": "F.A.",
+    "hint": "fa formulaathlete"
+  },
+  {
+    "name": "FA",
+    "hint": "fa fullarmoredxyz hurua"
+  },
+  {
+    "name": "GP",
+    "hint": "gp goldpride"
+  },
+  {
+    "name": "GS",
+    "hint": "gs goodstuff"
+  },
+  {
+    "name": "Gゴーレム",
+    "hint": "ggolem"
+  },
+  {
+    "name": "HERO",
+    "hint": "hero"
+  },
+  {
+    "name": "Kozmo",
+    "hint": "kozmo"
+  },
+  {
+    "name": "LL",
+    "hint": "ll lyrilusc lili riri"
+  },
+  {
+    "name": "M∀LICE",
+    "hint": "maliss"
+  },
+  {
+    "name": "P.U.N.K.",
+    "hint": "punk"
+  },
+  {
+    "name": "PSYフレーム",
+    "hint": "psyframe sai"
+  },
+  {
+    "name": "R-ACE",
+    "hint": "race"
+  },
+  {
+    "name": "RR",
+    "hint": "rr raidraptor reido"
+  },
+  {
+    "name": "S-Force",
+    "hint": "sforce security"
+  },
+  {
+    "name": "SPYRAL",
+    "hint": "spyral"
+  },
+  {
+    "name": "SR",
+    "hint": "sr speedroid"
+  },
+  {
+    "name": "TG",
+    "hint": "tg techgenus tekku"
+  },
+  {
+    "name": "U.A.",
+    "hint": "ua ultraathlete"
+  },
+  {
+    "name": "VS",
+    "hint": "vs vanquishsoul"
+  },
+  {
+    "name": "WW",
+    "hint": "ww windwitch"
+  },
+  {
+    "name": "X-セイバー",
+    "hint": "xsaber sabre"
+  },
+  {
+    "name": "アーティファクト",
+    "hint": "artifact"
+  },
+  {
+    "name": "アームド・ドラゴン",
+    "hint": "armeddragon a-mudo"
+  },
+  {
+    "name": "アザミナ",
+    "hint": "azamina"
+  },
+  {
+    "name": "アマゾネス",
+    "hint": "amazones"
+  },
+  {
+    "name": "アモルファージ",
+    "hint": "amorphage"
+  },
+  {
+    "name": "アルカナフォース",
+    "hint": "arcana force"
+  },
+  {
+    "name": "アルバス",
+    "hint": "albaz arubasu"
+  },
+  {
+    "name": "アロマ",
+    "hint": "aroma"
+  },
+  {
+    "name": "アンチホープ",
+    "hint": "antihope unchi unti"
+  },
+  {
+    "name": "アンデットワールド",
+    "hint": "undeadworld ande"
+  },
+  {
+    "name": "イグナイト",
+    "hint": "ignite"
+  },
+  {
+    "name": "イシズ",
+    "hint": "isiz issiz"
+  },
+  {
+    "name": "イゾルデ",
+    "hint": "isolde izoru"
+  },
+  {
+    "name": "インヴェルズ",
+    "hint": "inverz steelswarm veruzu"
+  },
+  {
+    "name": "インフェルニティ",
+    "hint": "infernity"
+  },
+  {
+    "name": "インフェルノイド",
+    "hint": "infernoid"
+  },
+  {
+    "name": "ヴァイロン",
+    "hint": "vylon vairon"
+  },
+  {
+    "name": "ヴァリアンツ",
+    "hint": "variants"
+  },
+  {
+    "name": "ヴァルモニカ",
+    "hint": "vaalmonica varumo"
+  },
+  {
+    "name": "ヴァレット/ヴァレル",
+    "hint": "vallet varrel borrel rokket"
+  },
+  {
+    "name": "ウィッチクラフト",
+    "hint": "wc witchcraft"
+  },
+  {
+    "name": "ヴェルズ",
+    "hint": "verz evilswarm veruzu"
+  },
+  {
+    "name": "ヴェンデット",
+    "hint": "vendread vendet"
+  },
+  {
+    "name": "ウォークライ",
+    "hint": "warcry warrock"
+  },
+  {
+    "name": "ヴォルカニック",
+    "hint": "volcanic vorukanik"
+  },
+  {
+    "name": "エヴァイユ",
+    "hint": "eveil evaiyu"
+  },
+  {
+    "name": "エヴォル",
+    "hint": "evol"
+  },
+  {
+    "name": "エクシーズ",
+    "hint": "xyz ekusi"
+  },
+  {
+    "name": "エクソシスター",
+    "hint": "exosister ekusos"
+  },
+  {
+    "name": "エクゾディア",
+    "hint": "exodia ekuzod"
+  },
+  {
+    "name": "エルドリッチ",
+    "hint": "eldlich eldorich erudori"
+  },
+  {
+    "name": "エレキ",
+    "hint": "watt elec erek"
+  },
+  {
+    "name": "エンディミオン",
+    "hint": "endimion endymion"
+  },
+  {
+    "name": "オシリス",
+    "hint": "osiris slifer"
+  },
+  {
+    "name": "オッドアイズ",
+    "hint": "oddeyes"
+  },
+  {
+    "name": "オベリスク",
+    "hint": "obelisk oberisuk"
+  },
+  {
+    "name": "オルターガイスト",
+    "hint": "altergeist olut orut"
+  },
+  {
+    "name": "オルフェゴール",
+    "hint": "orcust orphegol orufego"
+  },
+  {
+    "name": "ガイア",
+    "hint": "gaia"
+  },
+  {
+    "name": "ガエル",
+    "hint": "gaeru kaeru frog"
+  },
+  {
+    "name": "カオス",
+    "hint": "chaos kaos"
+  },
+  {
+    "name": "カグヤ",
+    "hint": "kaguya"
+  },
+  {
+    "name": "ガスタ",
+    "hint": "gusto gasu"
+  },
+  {
+    "name": "キマイラ",
+    "hint": "chimera kimaira"
+  },
+  {
+    "name": "ギミック・パペット",
+    "hint": "gimmickpuppet gimi pape"
+  },
+  {
+    "name": "ギャンブル",
+    "hint": "gamble"
+  },
+  {
+    "name": "クシャトリラ",
+    "hint": "kashtira kusha ksha"
+  },
+  {
+    "name": "クラゲ",
+    "hint": "kurage kragen"
+  },
+  {
+    "name": "クリアー",
+    "hint": "clear"
+  },
+  {
+    "name": "クリフォート",
+    "hint": "qliphort kurifort"
+  },
+  {
+    "name": "クリボー",
+    "hint": "kuribo"
+  },
+  {
+    "name": "グレイドル",
+    "hint": "graydle greido"
+  },
+  {
+    "name": "クローラー",
+    "hint": "krawler kuro-ra"
+  },
+  {
+    "name": "クロノダイバー",
+    "hint": "timethief chronodiver kurono"
+  },
+  {
+    "name": "ゲート・ガーディアン",
+    "hint": "gateguardian ge-toga-d"
+  },
+  {
+    "name": "コアキメイル",
+    "hint": "koakimeiru coaki"
+  },
+  {
+    "name": "ゴーストリック",
+    "hint": "ghostrick go-sutori"
+  },
+  {
+    "name": "ゴーティス",
+    "hint": "ghoti go-t"
+  },
+  {
+    "name": "コード・トーカー",
+    "hint": "codetalker ko-doto"
+  },
+  {
+    "name": "コック",
+    "hint": "cook"
+  },
+  {
+    "name": "コントロール奪取",
+    "hint": "control kontoro ntr"
+  },
+  {
+    "name": "サイバー・ダーク",
+    "hint": "cyberdark saiba-da-ku"
+  },
+  {
+    "name": "サイバー・ドラゴン",
+    "hint": "cyberdragon saiba-do"
+  },
+  {
+    "name": "サクリファイス",
+    "hint": "sacrifice relinquished sakuri"
+  },
+  {
+    "name": "サブテラー",
+    "hint": "subterror sabutera"
+  },
+  {
+    "name": "サンダードラゴン",
+    "hint": "thunderdragon sandora sanda-do"
+  },
+  {
+    "name": "ジェネクス",
+    "hint": "genex jenekusu"
+  },
+  {
+    "name": "ジェムナイト",
+    "hint": "gemknight jemu"
+  },
+  {
+    "name": "シムルグ",
+    "hint": "simorgh simurug"
+  },
+  {
+    "name": "シモッチ",
+    "hint": "simochi"
+  },
+  {
+    "name": "シャーク",
+    "hint": "shark sha-ku"
+  },
+  {
+    "name": "シャドール",
+    "hint": "shaddoll shado-"
+  },
+  {
+    "name": "シュトロームベルク",
+    "hint": "stromberg shutoro"
+  },
+  {
+    "name": "ジュラック",
+    "hint": "jurrac"
+  },
+  {
+    "name": "ジョウゲン",
+    "hint": "jogen jougen"
+  },
+  {
+    "name": "シンクロ",
+    "hint": "synchro"
+  },
+  {
+    "name": "シンクロン",
+    "hint": "synchron"
+  },
+  {
+    "name": "スクラップ",
+    "hint": "scrap sukurap"
+  },
+  {
+    "name": "スケアクロー",
+    "hint": "scareclaw sukeakuro"
+  },
+  {
+    "name": "スネークアイ",
+    "hint": "snakeeye sune-ku"
+  },
+  {
+    "name": "スパイダーワンキル",
+    "hint": "spider"
+  },
+  {
+    "name": "スプライト",
+    "hint": "spright supura"
+  },
+  {
+    "name": "スプリガンズ",
+    "hint": "springan supuriga"
+  },
+  {
+    "name": "セイクリッド",
+    "hint": "sacred constellar seikurid"
+  },
+  {
+    "name": "セフィラ",
+    "hint": "sephira zefra sefira"
+  },
+  {
+    "name": "セリオンズ",
+    "hint": "therion serion"
+  },
+  {
+    "name": "センチュリオン",
+    "hint": "centurion senchurion"
+  },
+  {
+    "name": "ゼンマイ",
+    "hint": "zenmai"
+  },
+  {
+    "name": "ダイナミスト",
+    "hint": "dinomist dainamis"
+  },
+  {
+    "name": "ダイノルフィア",
+    "hint": "dinomorphia dainoru"
+  },
+  {
+    "name": "タイムデス",
+    "hint": "timedes"
+  },
+  {
+    "name": "チェーンマテリアル",
+    "hint": "chainmaterial che-nma"
+  },
+  {
+    "name": "ディアベルスター",
+    "hint": "diabellstar"
+  },
+  {
+    "name": "ティアラメンツ",
+    "hint": "tearlaments tiara thiara"
+  },
+  {
+    "name": "ティスティナ",
+    "hint": "tistina"
+  },
+  {
+    "name": "ディストピア",
+    "hint": "shaddowdistopia"
+  },
+  {
+    "name": "ティンダングル",
+    "hint": "tindangle"
+  },
+  {
+    "name": "デーモン",
+    "hint": "archfiend demon"
+  },
+  {
+    "name": "デストーイ",
+    "hint": "fluffal frightfur fanima destoy"
+  },
+  {
+    "name": "デスピア",
+    "hint": "despia"
+  },
+  {
+    "name": "デスフェニ",
+    "hint": "destroyphoenix desufeni"
+  },
+  {
+    "name": "デッキ破壊",
+    "hint": "deckdestruction dekkihakai"
+  },
+  {
+    "name": "デモンスミス",
+    "hint": "demonsmith"
+  },
+  {
+    "name": "デュアル",
+    "hint": "dual"
+  },
+  {
+    "name": "デュエリストカップ(不明)",
+    "hint": "duelistcup"
+  },
+  {
+    "name": "テラナイト",
+    "hint": "tellarknight teranaito terra"
+  },
+  {
+    "name": "テレホンループ",
+    "hint": "telephone terehon"
+  },
+  {
+    "name": "トイボックス",
+    "hint": "toybox"
+  },
+  {
+    "name": "トゥーン",
+    "hint": "toon"
+  },
+  {
+    "name": "ドラグーン",
+    "hint": "dragoon"
+  },
+  {
+    "name": "ドラグニティ",
+    "hint": "dragunity doraguni"
+  },
+  {
+    "name": "ドラゴンメイド",
+    "hint": "dragonmaid doragonmeido"
+  },
+  {
+    "name": "ドラゴンリンク",
+    "hint": "dragonlink"
+  },
+  {
+    "name": "トリックスター",
+    "hint": "trickstar torik"
+  },
+  {
+    "name": "ドレミコード",
+    "hint": "solfachord doremicode"
+  },
+  {
+    "name": "トロイメア",
+    "hint": "knightmare troy toroimea"
+  },
+  {
+    "name": "ナチュル",
+    "hint": "naturia nachu"
+  },
+  {
+    "name": "ヌーベルズ",
+    "hint": "nouvelle nu-be"
+  },
+  {
+    "name": "ヌメドラワンキル",
+    "hint": "numerondragon"
+  },
+  {
+    "name": "ヌメロン",
+    "hint": "numeron"
+  },
+  {
+    "name": "ネオス",
+    "hint": "neos"
+  },
+  {
+    "name": "ネフティス",
+    "hint": "nephthys nehu nefu"
+  },
+  {
+    "name": "ネムレリア",
+    "hint": "nemleria nemure"
+  },
+  {
+    "name": "パーシアス",
+    "hint": "parshath pa-si"
+  },
+  {
+    "name": "バージェストマ",
+    "hint": "paleozoic burgess ba-je"
+  },
+  {
+    "name": "ハーピィ",
+    "hint": "harpie ha-pi"
+  },
+  {
+    "name": "バーン",
+    "hint": "burn"
+  },
+  {
+    "name": "パシフィス",
+    "hint": "pacifis pasifis"
+  },
+  {
+    "name": "パラディオン",
+    "hint": "crusadia paradion"
+  },
+  {
+    "name": "ピュアリィ",
+    "hint": "purrely pyuari"
+  },
+  {
+    "name": "ヒロイック",
+    "hint": "heroic hiroik"
+  },
+  {
+    "name": "ファイアウォール",
+    "hint": "firewall faiawo"
+  },
+  {
+    "name": "ブラック・マジシャン",
+    "hint": "blackmagician dark buramaji"
+  },
+  {
+    "name": "プランキッズ",
+    "hint": "prankkids puranki"
+  },
+  {
+    "name": "フルバーン",
+    "hint": "fullburn"
+  },
+  {
+    "name": "フレムベル",
+    "hint": "flamvell furemu huremu"
+  },
+  {
+    "name": "ふわんだりぃず",
+    "hint": "floowandereeze fuwan huwan"
+  },
+  {
+    "name": "ベアルクティ",
+    "hint": "ursarctic bearukuti"
+  },
+  {
+    "name": "ヘルテンネクロ",
+    "hint": "helltempest necro"
+  },
+  {
+    "name": "ペンギン",
+    "hint": "penguin pengin"
+  },
+  {
+    "name": "ベンケイ",
+    "hint": "benkei"
+  },
+  {
+    "name": "ホープ",
+    "hint": "hope"
+  },
+  {
+    "name": "ホープワンキル",
+    "hint": "hope"
+  },
+  {
+    "name": "ホーリーナイツ",
+    "hint": "holynights ho-ri-na"
+  },
+  {
+    "name": "ホルス",
+    "hint": "horus"
+  },
+  {
+    "name": "マギストス",
+    "hint": "magistus"
+  },
+  {
+    "name": "マジェスペクター",
+    "hint": "majespecter"
+  },
+  {
+    "name": "マシュマックワンキル",
+    "hint": "machumech mashuma"
+  },
+  {
+    "name": "マシンナーズ",
+    "hint": "machina masin"
+  },
+  {
+    "name": "マテリアクトル",
+    "hint": "materiactol"
+  },
+  {
+    "name": "マドルチェ",
+    "hint": "madolche"
+  },
+  {
+    "name": "マナドゥム",
+    "hint": "mannadium manadu"
+  },
+  {
+    "name": "マルチャミー",
+    "hint": "maruchami mulcharmy"
+  },
+  {
+    "name": "ミッション消化",
+    "hint": "mission"
+  },
+  {
+    "name": "ミミグル",
+    "hint": "mimighoul"
+  },
+  {
+    "name": "ミュートリア",
+    "hint": "myutant mutoria"
+  },
+  {
+    "name": "メガリス",
+    "hint": "megalith megaris"
+  },
+  {
+    "name": "メタビート",
+    "hint": "metabeat"
+  },
+  {
+    "name": "メタファイズ",
+    "hint": "metaphys"
+  },
+  {
+    "name": "メタルフォーゼ",
+    "hint": "metalfoes"
+  },
+  {
+    "name": "メタル化",
+    "hint": "metalize"
+  },
+  {
+    "name": "メメント",
+    "hint": "mementotlan"
+  },
+  {
+    "name": "メルフィー",
+    "hint": "melffy merufi"
+  },
+  {
+    "name": "ユベル",
+    "hint": "yubel"
+  },
+  {
+    "name": "ラー",
+    "hint": "ra"
+  },
+  {
+    "name": "ライゼオル",
+    "hint": "raizeoru ryzeal"
+  },
+  {
+    "name": "ライトロード",
+    "hint": "lightsworn raitoro rairo"
+  },
+  {
+    "name": "ラヴァル",
+    "hint": "laval raval"
+  },
+  {
+    "name": "ラドリー",
+    "hint": "ladry"
+  },
+  {
+    "name": "ラドン",
+    "hint": "auroradon"
+  },
+  {
+    "name": "ラビュリンス",
+    "hint": "labrynth rabyu"
+  },
+  {
+    "name": "リゾネーター",
+    "hint": "resonator risonat rizone"
+  },
+  {
+    "name": "リチュア",
+    "hint": "ritual gishiki"
+  },
+  {
+    "name": "リバイアサン",
+    "hint": "kairyu-shin leviathan ribaia"
+  },
+  {
+    "name": "リブロマンサー",
+    "hint": "libromancer riburo"
+  },
+  {
+    "name": "ルインフォースワンキル",
+    "hint": "ruinforce"
+  },
+  {
+    "name": "レッドアイズ",
+    "hint": "redeyes"
+  },
+  {
+    "name": "レプティレス",
+    "hint": "peptilianne"
+  },
+  {
+    "name": "レンタル",
+    "hint": "rental"
+  },
+  {
+    "name": "ローズ",
+    "hint": "rose rozu"
+  },
+  {
+    "name": "ロルバワンキル",
+    "hint": "rorubawankiru"
+  },
+  {
+    "name": "ロルバ開放",
+    "hint": "roruba"
+  },
+  {
+    "name": "ワーム",
+    "hint": "worm wa-mu"
+  },
+  {
+    "name": "ワイト",
+    "hint": "wight waito"
+  },
+  {
+    "name": "亜種羅王",
+    "hint": "ashurao"
+  },
+  {
+    "name": "暗黒界",
+    "hint": "darkworld ankoku"
+  },
+  {
+    "name": "影霊衣",
+    "hint": "nekroz nekuros necroth"
+  },
+  {
+    "name": "炎の剣士",
+    "hint": "honoo"
+  },
+  {
+    "name": "炎王",
+    "hint": "fireking enou ennou"
+  },
+  {
+    "name": "炎星",
+    "hint": "firefist ensei"
+  },
+  {
+    "name": "焔聖騎士",
+    "hint": "infernobleknight enseikis"
+  },
+  {
+    "name": "王",
+    "hint": "generaider jenereido"
+  },
+  {
+    "name": "音響戦士",
+    "hint": "onkyo soundwarrior symphonic"
+  },
+  {
+    "name": "花札衛",
+    "hint": "cardian"
+  },
+  {
+    "name": "霞の谷",
+    "hint": "mistvalley"
+  },
+  {
+    "name": "壊獣",
+    "hint": "kaiju"
+  },
+  {
+    "name": "海皇",
+    "hint": "atlantean kaiou"
+  },
+  {
+    "name": "海晶乙女",
+    "hint": "marincess marinse"
+  },
+  {
+    "name": "海造賊",
+    "hint": "plunderpatroll purando"
+  },
+  {
+    "name": "灰滅",
+    "hint": "ashened kaimetsu"
+  },
+  {
+    "name": "絵札",
+    "hint": "efuda tramp"
+  },
+  {
+    "name": "機械天使",
+    "hint": "cyberangel kikaitens"
+  },
+  {
+    "name": "機界騎士",
+    "hint": "mekknight jacknight"
+  },
+  {
+    "name": "機巧",
+    "hint": "gizmek kikou"
+  },
+  {
+    "name": "騎甲虫",
+    "hint": "beetrooper bi-toru"
+  },
+  {
+    "name": "巨大戦艦",
+    "hint": "bes kyodaisenkan"
+  },
+  {
+    "name": "教導",
+    "hint": "dogmatica dragma doragu"
+  },
+  {
+    "name": "驚楽園",
+    "hint": "amazement ameizu"
+  },
+  {
+    "name": "極星",
+    "hint": "nordic kyokuse"
+  },
+  {
+    "name": "銀河",
+    "hint": "galaxy gyarakus"
+  },
+  {
+    "name": "空牙団",
+    "hint": "furhire kugadan kuugadan"
+  },
+  {
+    "name": "軍貫",
+    "hint": "gunkan sushi"
+  },
+  {
+    "name": "激臨ワンキル",
+    "hint": "blueeyes buru-a gekirin"
+  },
+  {
+    "name": "結界像",
+    "hint": "barrierstatue kekkaizo"
+  },
+  {
+    "name": "月光",
+    "hint": "lunalight moon gekkou"
+  },
+  {
+    "name": "剣闘獣",
+    "hint": "gladiatorbeast guradia kento"
+  },
+  {
+    "name": "原石",
+    "hint": "genseki"
+  },
+  {
+    "name": "幻影騎士団",
+    "hint": "phantomnights fantomu genei gennei"
+  },
+  {
+    "name": "幻獣",
+    "hint": "phantombeast genju"
+  },
+  {
+    "name": "幻獣機",
+    "hint": "mechaphantombeast genjuki"
+  },
+  {
+    "name": "幻奏",
+    "hint": "melodious genso"
+  },
+  {
+    "name": "幻魔",
+    "hint": "phantasms genma gemma"
+  },
+  {
+    "name": "古代の機械",
+    "hint": "ancientgear antiku"
+  },
+  {
+    "name": "御巫",
+    "hint": "mikanko"
+  },
+  {
+    "name": "光と闇の竜",
+    "hint": "light dark"
+  },
+  {
+    "name": "光の黄金櫃",
+    "hint": "yugi hikarino ougon"
+  },
+  {
+    "name": "光子",
+    "hint": "photon foton"
+  },
+  {
+    "name": "甲虫装機",
+    "hint": "inzektor"
+  },
+  {
+    "name": "剛鬼",
+    "hint": "gouki goki"
+  },
+  {
+    "name": "再世",
+    "hint": "regenesis"
+  },
+  {
+    "name": "三幻神",
+    "hint": "divine sangensin"
+  },
+  {
+    "name": "斬機",
+    "hint": "mathmech zanki"
+  },
+  {
+    "name": "時械神",
+    "hint": "timelord jikaishin"
+  },
+  {
+    "name": "磁石の戦士",
+    "hint": "magnetwarrior"
+  },
+  {
+    "name": "自爆",
+    "hint": "suiside jibaku"
+  },
+  {
+    "name": "芝刈り",
+    "hint": "sibakari shibakari"
+  },
+  {
+    "name": "種族:アンデット族",
+    "hint": "zombie undead andet"
+  },
+  {
+    "name": "種族:機械族",
+    "hint": "machine kikai"
+  },
+  {
+    "name": "種族:魚族",
+    "hint": "fish sakana"
+  },
+  {
+    "name": "種族:恐竜族",
+    "hint": "dinosaur kyouryu kyoryu"
+  },
+  {
+    "name": "種族:昆虫族",
+    "hint": "insect konchu"
+  },
+  {
+    "name": "種族:獣族",
+    "hint": "beast kemono"
+  },
+  {
+    "name": "種族:植物族",
+    "hint": "plant shokubut"
+  },
+  {
+    "name": "種族:戦士族",
+    "hint": "warrior sensi"
+  },
+  {
+    "name": "種族:鳥獣族",
+    "hint": "wingedbeast bird choju tori"
+  },
+  {
+    "name": "種族:爬虫類族",
+    "hint": "reptile hachurui"
+  },
+  {
+    "name": "呪眼",
+    "hint": "eveleye jugan"
+  },
+  {
+    "name": "終焉のカウントダウン",
+    "hint": "countdown"
+  },
+  {
+    "name": "十二獣",
+    "hint": "zoodiac junis"
+  },
+  {
+    "name": "粛声",
+    "hint": "voiceless shukusei syu"
+  },
+  {
+    "name": "春化精",
+    "hint": "vernusylph harukes"
+  },
+  {
+    "name": "除外",
+    "hint": "banish jogai"
+  },
+  {
+    "name": "召喚",
+    "hint": "invoker shokan"
+  },
+  {
+    "name": "深淵の獣",
+    "hint": "bystial bi-sute beasted shinen"
+  },
+  {
+    "name": "真竜",
+    "hint": "true sinryu shinr"
+  },
+  {
+    "name": "神碑",
+    "hint": "runick rune"
+  },
+  {
+    "name": "図書館",
+    "hint": "toshokan"
+  },
+  {
+    "name": "水晶機巧",
+    "hint": "crystron kurist"
+  },
+  {
+    "name": "水精鱗",
+    "hint": "ma-meiru"
+  },
+  {
+    "name": "世壊",
+    "hint": "sekai"
+  },
+  {
+    "name": "星遺物",
+    "hint": "worldlegacy seiibut seibut"
+  },
+  {
+    "name": "星杯",
+    "hint": "worldchalice seihai"
+  },
+  {
+    "name": "精霊獣使い",
+    "hint": "spiritualbeasttamer seireijutsukai tukai"
+  },
+  {
+    "name": "聖騎士",
+    "hint": "nobleknight seikis"
+  },
+  {
+    "name": "聖刻",
+    "hint": "hieratic seikoku sekoku"
+  },
+  {
+    "name": "聖天樹/聖蔓/聖種",
+    "hint": "suna suns sunv sana sans sanv"
+  },
+  {
+    "name": "青眼",
+    "hint": "blueeyes buru-a"
+  },
+  {
+    "name": "雪花",
+    "hint": "sekka"
+  },
+  {
+    "name": "先史遺産",
+    "hint": "chronomaly o-pa-t"
+  },
+  {
+    "name": "千年",
+    "hint": "millenium sennen"
+  },
+  {
+    "name": "占術姫",
+    "hint": "predictionprincess senjutsuki"
+  },
+  {
+    "name": "宣告者",
+    "hint": "herald dekurea declare"
+  },
+  {
+    "name": "戦華",
+    "hint": "ancientwarriors senka"
+  },
+  {
+    "name": "閃刀姫",
+    "hint": "skystriker sentouki"
+  },
+  {
+    "name": "相剣",
+    "hint": "swordsoul souken soken"
+  },
+  {
+    "name": "属性:炎",
+    "hint": "fire honoo"
+  },
+  {
+    "name": "属性:水",
+    "hint": "water mizu"
+  },
+  {
+    "name": "属性:地",
+    "hint": "earth chi ti"
+  },
+  {
+    "name": "属性:風",
+    "hint": "wind kaze"
+  },
+  {
+    "name": "堕天使",
+    "hint": "darklord fallen datenshi"
+  },
+  {
+    "name": "駄天使",
+    "hint": "datenshi ghostrick"
+  },
+  {
+    "name": "代行者",
+    "hint": "agent daikousha"
+  },
+  {
+    "name": "大逆転クイズ",
+    "hint": "quiz"
+  },
+  {
+    "name": "地縛",
+    "hint": "earthbound jibaku"
+  },
+  {
+    "name": "地縛神",
+    "hint": "earthbound jibaku"
+  },
+  {
+    "name": "超越竜",
+    "hint": "transcendosaurus choet"
+  },
+  {
+    "name": "超重武者",
+    "hint": "superheavy chojumusha"
+  },
+  {
+    "name": "超量",
+    "hint": "superquant choryo"
+  },
+  {
+    "name": "帝王",
+    "hint": "monarch teio mikado"
+  },
+  {
+    "name": "鉄獣戦線",
+    "hint": "tribrigade traibu tetsuju"
+  },
+  {
+    "name": "天威",
+    "hint": "tenyi tenni"
+  },
+  {
+    "name": "天気",
+    "hint": "weather tenki"
+  },
+  {
+    "name": "天盃龍",
+    "hint": "tenpairyu tempai sangenryu"
+  },
+  {
+    "name": "転生炎獣",
+    "hint": "salamangreat saraman"
+  },
+  {
+    "name": "電子光虫",
+    "hint": "digital bug"
+  },
+  {
+    "name": "電脳堺",
+    "hint": "virtualworld dennnokai dennoukai"
+  },
+  {
+    "name": "忍者",
+    "hint": "ninja"
+  },
+  {
+    "name": "覇王",
+    "hint": "supremeking haou"
+  },
+  {
+    "name": "破壊剣",
+    "hint": "hakaiken dragonbuster dorabasu"
+  },
+  {
+    "name": "破械",
+    "hint": "unchained hakai"
+  },
+  {
+    "name": "白き森",
+    "hint": "shiroki siroki white forest"
+  },
+  {
+    "name": "白闘気",
+    "hint": "whiteaura howaito"
+  },
+  {
+    "name": "彼岸",
+    "hint": "burningabyss higan"
+  },
+  {
+    "name": "飛行エレファント",
+    "hint": "elephant"
+  },
+  {
+    "name": "百鬼羅刹",
+    "hint": "goblin goburin"
+  },
+  {
+    "name": "氷結界",
+    "hint": "icebarrier hyokekkai hyouke"
+  },
+  {
+    "name": "氷水",
+    "hint": "icejade hisui"
+  },
+  {
+    "name": "不知火",
+    "hint": "shiranui"
+  },
+  {
+    "name": "武神",
+    "hint": "bujin"
+  },
+  {
+    "name": "捕食植物",
+    "hint": "predaplant puredeta"
+  },
+  {
+    "name": "墓守",
+    "hint": "gravekeeper hakamori"
+  },
+  {
+    "name": "宝玉獣",
+    "hint": "crystalbeast hogyoku"
+  },
+  {
+    "name": "方界",
+    "hint": "cubic houkai hokai"
+  },
+  {
+    "name": "凡骨",
+    "hint": "bonkotsu"
+  },
+  {
+    "name": "魔界劇団",
+    "hint": "abyssactor makaigekidan"
+  },
+  {
+    "name": "魔救",
+    "hint": "adamancipator adamasia"
+  },
+  {
+    "name": "魔鍵",
+    "hint": "magikey maken"
+  },
+  {
+    "name": "魔轟神",
+    "hint": "fabled magous magos"
+  },
+  {
+    "name": "魔術師",
+    "hint": "magician majut"
+  },
+  {
+    "name": "魔神儀",
+    "hint": "deviritual"
+  },
+  {
+    "name": "魔弾",
+    "hint": "magicalmusketeer madan"
+  },
+  {
+    "name": "魔導書",
+    "hint": "spellbook madousho mados"
+  },
+  {
+    "name": "魔妖",
+    "hint": "mayakashi"
+  },
+  {
+    "name": "未界域",
+    "hint": "danger mikaiiki"
+  },
+  {
+    "name": "魅惑の女王",
+    "hint": "miwaku queen"
+  },
+  {
+    "name": "夢魔鏡",
+    "hint": "dreammirror yumemakyo"
+  },
+  {
+    "name": "無限起動",
+    "hint": "infinitrack mugenkido"
+  },
+  {
+    "name": "紋章獣",
+    "hint": "monsho"
+  },
+  {
+    "name": "勇者",
+    "hint": "adventurer yusha"
+  },
+  {
+    "name": "妖仙獣",
+    "hint": "yosenju"
+  },
+  {
+    "name": "竜華",
+    "hint": "ryuge"
+  },
+  {
+    "name": "竜輝巧",
+    "hint": "drytron doraitoron"
+  },
+  {
+    "name": "竜剣士",
+    "hint": "dracoslayer ryukens"
+  },
+  {
+    "name": "竜星",
+    "hint": "yangzing ryusei"
+  },
+  {
+    "name": "霊使い",
+    "hint": "charmer reitsukai reitukai"
+  },
+  {
+    "name": "列車",
+    "hint": "train ressha"
+  },
+  {
+    "name": "六花",
+    "hint": "rikka"
+  },
+  {
+    "name": "六武衆",
+    "hint": "6samurai six rokubushu"
+  },
+  {
+    "name": "溟界",
+    "hint": "ogdoadicboundless meikai"
+  },
+  {
+    "name": "烙印",
+    "hint": "branded rakuin"
+  },
+  {
+    "name": "罠モンスター",
+    "hint": "trapmonster wanamon"
+  },
+  {
+    "name": "蕾禍",
+    "hint": "raika"
+  },
+  {
+    "name": "蟲惑魔",
+    "hint": "traptrix kowakuma"
+  },
+  {
+    "name": "巳剣",
+    "hint": "mitsurugi"
+  },
+  {
+    "name": "征竜",
+    "hint": "seiryu"
+  },
+  {
+    "name": "オノマト",
+    "hint": "onomato"
+  },
+  {
+    "name": "モルガナイト",
+    "hint": "morganite"
+  },
+  {
+    "name": "ターンスキップ",
+    "hint": "turnskip"
+  },
+  {
+    "name": "ドラゴンテイル",
+    "hint": "dragontail"
+  },
+  {
+    "name": "王家の神殿",
+    "hint": "ouke"
+  },
+  {
+    "name": "アルトメギア",
+    "hint": "artmage"
+  },
+  {
+    "name": "ヤミー",
+    "hint": "yummy"
+  },
+  {
+    "name": "K9",
+    "hint": "k9"
+  },
+  {
+    "name": "絢嵐",
+    "hint": "kenran"
+  },
+  {
+    "name": "終刻",
+    "hint": "doomz"
+  },
+  {
+    "name": "/バスター",
+    "hint": "buster"
+  },
+  {
+    "name": "キラーチューン",
+    "hint": "killertune"
+  },
+  {
+    "name": "R.B.",
+    "hint": "rb ribolbot"
+  },
+  {
+    "name": "見えざる手",
+    "hint": "hekatonkeil Hecahands"
+  },
+  {
+    "name": "エルフェンノーツ",
+    "hint": "elfen "
+  },
+  {
+    "name": "糾罪巧",
+    "hint": "enneacraft enia"
+  },
+  {
+    "name": "妖精伝姫",
+    "hint": "fairytale"
+  }
+]
